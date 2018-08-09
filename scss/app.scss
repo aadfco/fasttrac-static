@@ -29,10 +29,10 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
+//@include foundation-orbit;
 @include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
+//@include foundation-progress-bar;
+//@include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
 @include foundation-switch;
@@ -50,3 +50,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+/* Import Custom Styles */
+@import 'sass/3-layouts/global';
+@import 'sass/3-layouts/header';

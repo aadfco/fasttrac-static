@@ -1,0 +1,23 @@
+/******** Globals *******/
+
+/* Containers and Grids */
+.container
+  @include xy-grid-container
+
+.content-wrapper
+  width: 100%
+  margin-top: 60px
+  padding-bottom: 60px
+
+.inner-row
+  @include xy-grid
+
+.inner-row-inline
+  @include xy-grid
+  display: inline-flex
+
+/* Typography - Font Weights: Open Sans 400, 700, 800 */
+h1, h2, h3, h4, h5, h6
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-weight: 800

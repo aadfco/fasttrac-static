@@ -32,6 +32,6 @@ gulp.task('default', ['sass'], function() {
 
   //gulp.watch(['scss/**/*.scss'], ['sass']);
   gulp.watch("./scss/*.scss", ['sass']);
-  gulp.watch("./sass/*.sass", ['sass']);
+  gulp.watch("./sass/**/*.sass", ['sass']);
   gulp.watch("./*.php").on('change', browserSync.reload);
 });

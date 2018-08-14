@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('.mobile-btn').click(function(){
-		$(this).toggleClass('open');
+	$('.hamburger').click(function(){
+		$(this).toggleClass('is-active');
 	});
 });
 

@@ -6,7 +6,7 @@
 
 @include foundation-global-styles;
 // @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
@@ -29,7 +29,7 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-//@include foundation-orbit;
+@include foundation-orbit;
 @include foundation-pagination;
 //@include foundation-progress-bar;
 //@include foundation-slider;
@@ -54,3 +54,5 @@
 /* Import Custom Styles */
 @import 'sass/3-layouts/global';
 @import 'sass/3-layouts/header';
+@import 'sass/3-layouts/home';
+@import 'sass/3-layouts/footer';

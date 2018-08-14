@@ -52,6 +52,7 @@
 @include motion-ui-animations;
 
 /* Import Custom Styles */
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers';
 @import 'sass/3-layouts/global';
 @import 'sass/3-layouts/header';
 @import 'sass/3-layouts/home';

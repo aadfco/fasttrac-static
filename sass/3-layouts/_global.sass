@@ -1,6 +1,6 @@
 /******** Globals *******/
 
-/* Containers and Grids */
+/* Semantics for Containers, Grids, and Cells*/
 .container
   @include xy-grid-container
 
@@ -10,14 +10,205 @@
   padding-bottom: 60px
 
 .inner-row
-  @include xy-grid
+  @include xy-grid()
 
 .inner-row-inline
   @include xy-grid
   display: inline-flex
+
+.top-social, .secondary-menu
+  @include xy-cell(6)
+
+.logo
+  @include xy-cell(20%, true, 0)
+
+  @include breakpoint(small only)
+    @include xy-cell(6)
+
+.mobile-menu
+  @include xy-cell(6)
+
+.primary-menu
+  @include xy-cell(auto)
+
+  .menu
+    @include flex-align(right)
+
+.fp-login
+  @include xy-cell(10%)
+
+.fp-logo
+  @include flex-align(right)
+
+.section-title
+  @include xy-cell()
+
+.section-content
+  @include breakpoint(small)
+    @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(6)
+
+.two-col-section-content
+  @include xy-cell(6)
+
+.circle-bg
+  @include xy-cell(3)
+
+.store-locator-form
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(3)
+
+
+.employee-cutout
+  @include xy-cell(12)
+  @include breakpoint(medium)
+    @include xy-cell(6)
+
+.footer-widget-cell
+  @include xy-cell(6)
+
+  @include breakpoint(medium)
+    @include xy-cell(3)
+
+  @include breakpoint(large)
+    @include xy-cell(3)
+
+.bf-copyright, .bf-social
+  @include xy-cell(12)
+  @include breakpoint(medium)
+    @include xy-cell(6)
+
+/* Animations */
+.slide-in-top
+  @include mui-slide
 
 /* Typography - Font Weights: Open Sans 400, 700, 800 */
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   letter-spacing: 1px
   font-weight: 800
+
+.section-title
+  text-align: center
+  padding-top: rem-calc(60)
+
+  h1
+    font-size: rem-calc(60)
+
+    @include breakpoint(small only)
+      font-size: 3rem
+
+.section-content
+  padding-top: rem-calc(60)
+
+/* Text Effects */
+.standard-shadow
+  text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
+
+.deepshadow
+  color: #e0dfdc
+  letter-spacing: .1em
+  text-shadow: 0 -1px 0 #fff,
+  0 1px 0 #2e2e2e,
+  0 2px 0 #2c2c2c,
+  0 3px 0 #2a2a2a,
+  0 4px 0 #282828,
+  0 5px 0 #262626,
+  0 6px 0 #242424,
+  0 7px 0 #222,
+  0 8px 0 #202020,
+  0 9px 0 #1e1e1e,
+  0 10px 0 #1c1c1c,
+  0 11px 0 #1a1a1a,
+  0 12px 0 #181818,
+  0 13px 0 #161616,
+  0 14px 0 #141414,
+  0 15px 0 #121212,
+  0 22px 30px rgba(0, 0, 0, 0.9)
+
+.retroshadow
+  color: $white
+  letter-spacing: .05em
+  text-shadow: 4px 4px 0px $red, 7px 7px 0px rgba($black, 0.4)
+
+.superhero
+  color: $white
+  text-shadow: -5px 5px 0px darken($red, 5%),
+  -10px 10px 0px darken($red, 15%),
+  -15px 15px 0px darken($red, 25%)
+
+/* Button */
+.button
+  font-size: 1rem
+  text-transform: uppercase
+  font-weight: 800
+  border-bottom: 5px solid darken($red, 15%)
+  text-shadow: 0 2px darken($red, 15%)
+  transition: all 0.1s
+
+  &:active
+    transform: translate(0px, 3px)
+    border-bottom: 1px solid darken($red, 15%)
+
+  &.yellow-btn
+    background-color: $yellow
+    border-bottom: 5px solid darken($yellow, 15%)
+    text-shadow: 0 2px darken($yellow, 15%)
+
+    &:hover
+      background-color: darken($yellow, 10%)
+
+    &:active
+        transform: translate(0px, 3px)
+        border-bottom: 1px solid darken($yellow, 15%)
+
+  &.green-btn
+    background-color: $green
+    border-bottom: 5px solid darken($green, 15%)
+    text-shadow: 0 2px darken($green, 15%)
+
+    &:hover
+      background-color: darken($green, 10%)
+
+    &:active
+      transform: translate(0px, 3px)
+      border-bottom: 1px solid darken($green, 15%)
+
+  &.blue-btn
+    background-color: $blue
+    border-bottom: 5px solid darken($blue, 15%)
+    text-shadow: 0 2px darken($blue, 15%)
+
+    &:hover
+      background-color: darken($blue, 10%)
+
+    &:active
+      transform: translate(0px, 3px)
+      border-bottom: 1px solid darken($blue, 15%)
+
+  &.black-btn
+    background-color: $medium-black
+    border-bottom: 5px solid darken($medium-black, 15%)
+    text-shadow: 0 2px darken($medium-black, 15%)
+
+    &:hover
+      background-color: darken($medium-black, 10%)
+
+    &:active
+      transform: translate(0px, 3px)
+      border-bottom: 1px solid darken($medium-black, 15%)
+
+  &.white-btn
+    color: $red
+    background-color: $white
+    border-bottom: 5px solid darken($white, 15%)
+    text-shadow: 0 2px darken($white, 15%)
+
+    &:hover
+      background-color: darken($white, 10%)
+
+    &:active
+      transform: translate(0px, 3px)
+      border-bottom: 1px solid darken($white, 15%)

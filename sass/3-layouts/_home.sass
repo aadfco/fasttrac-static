@@ -1,0 +1,231 @@
+.fullscreen-image-slider
+  .orbit-image
+    width: 100%
+    height: 65vh
+
+    @include breakpoint(small only)
+      height: 45vh
+
+.orbit-caption
+    bottom: 50%
+    transform: translateY(50%)
+    background: none
+    text-align: left
+    padding-left: 60px
+    color: $white
+    text-shadow: 2px 3px 7px $black
+
+    @include breakpoint(medium down)
+      padding: 1rem
+
+      h1
+        font-size: 2rem
+
+    p
+      font-size: rem-calc(18)
+      text-shadow: 2px 3px 5px $black
+
+      @include breakpoint(medium down)
+        font-size: 1rem
+
+.orbit-previous, .orbit-next
+  top: 50%
+
+  @include breakpoint(medium down)
+    display: none
+
+.red-text
+  color: $red
+
+.orbit-bullets
+  position: absolute
+  left: 50%
+  bottom: rem-calc(10)
+
+  button
+    width: 0.7rem
+    height: 0.7rem
+
+  @include breakpoint (medium down)
+    left: 45%
+
+.fast-points-home
+  background-color: $red
+  background-image: url("../img/arches.png")
+  padding-bottom: 60px
+
+  @include breakpoint(medium down)
+    h1
+      font-size: 3rem
+
+  h2, p
+    color: $white
+
+  h2
+    text-align: center
+    font-size: 1.125rem
+
+    @include breakpoint(small only)
+      text-align: left
+
+  p
+    text-align: justify
+
+.earn-steps
+  margin-top: 60px
+  padding-bottom: 60px
+
+
+.rewards-steps-circle
+  position: relative
+  margin: 0 3.5rem
+  display: block
+  background: $white
+  border-radius: 50%
+  height: 200px
+  width: 200px
+
+  @include breakpoint(small only)
+    margin: 0 0.4rem
+    height: 75px
+    width: 75px
+
+  @include breakpoint(medium down)
+    @include breakpoint(landscape)
+      margin: 0 1rem
+      height: 100px
+      width: 100px
+
+  &:after
+    content: ""
+    position: absolute
+    width: 45%
+    height: 1px
+    top: 50%
+    border: 1px solid $white
+    display: block
+    right: calc(-50% + 1px)
+    z-index: 1
+
+    @include breakpoint(small only)
+      width: 20%
+      right: calc(-20% + 1px)
+
+    @include breakpoint(medium down)
+      @include breakpoint(landscape)
+        width: 35%
+        right: calc(-35% + 1px)
+
+  &:last-child
+    &:after
+      display: none
+
+  .circle-content
+    text-align: center
+    transform: translateY(50%)
+
+    @include breakpoint(small only)
+      transform: translateY(25%)
+
+    @include breakpoint(medium down)
+      @include breakpoint(landscape)
+        transform: translateY(35%)
+
+    .fas
+      color: $red
+      font-size: 3.5rem
+
+      @include breakpoint(small only)
+        font-size: 1.5rem
+
+      @include breakpoint(medium down)
+        @include breakpoint(landscape)
+          font-size: 2rem
+
+    span
+      display: block
+      font-weight: 800
+      color: $red
+      font-size: rem-calc(32)
+
+      @include breakpoint(small only)
+        font-size: 1rem
+
+      @include breakpoint(medium down)
+        @include breakpoint(landscape)
+          font-size: 1.2rem
+
+.join-today-heading
+  h2
+    @include breakpoint(small only)
+      text-align: center
+
+.btn-row
+  .button
+    margin: 30px 10px
+    padding: 1rem 5rem
+
+    @include breakpoint(small only)
+      margin: 30px 3px
+      padding: 1rem 2.5rem
+
+.store-locator-home
+  background-image: url("../img/fasttrac-nighttime.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  padding-bottom: 60px
+
+  h2,p
+    color: $white
+
+  h2
+    font-size: 1.125rem
+
+  p
+    font-weight: 700
+    font-size: rem-calc(22)
+
+    @include breakpoint(medium down)
+      font-size: 1.2rem
+      text-align: justify
+
+  .store-locator-form
+    padding: 60px 0 30px
+
+    label
+      color: $white
+      text-align: center
+      font-weight: 700
+
+    input
+      text-align: center
+      font-weight: 700
+
+  .button
+    padding: 1rem 5rem
+    margin-top: 30px
+
+.careers-home
+  position: relative
+  padding: 0 0 120px
+  background: $yellow url("../img/wavecut.png")
+
+  .section-title
+    text-align: left
+
+  .section-content
+    p
+      padding-bottom: 30px
+
+.employee-cutout
+  position: absolute
+  bottom: 0
+  right: 0
+
+  @include breakpoint(medium down)
+    display: none
+
+  img
+    display: block
+    width: 30%
+    margin: 0 auto

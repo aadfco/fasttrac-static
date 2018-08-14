@@ -1,5 +1,227 @@
 /* Headers, Heroes, and Sliders Ohh My */
-.top-nav
+.top-nav, .main-nav
+  text-transform: uppercase
+  font-weight: 800
+  letter-spacing: 0.5px
 
+.top-nav
+  background-color: $black
+  font-size: rem-calc(12)
+  border-bottom: 2px solid $red
+
+  a
+    color: $white
+
+    &:hover
+      color: $yellow
+
+  @include breakpoint(medium down)
+    padding: 5px 0
+
+  .top-social, .secondary-menu
+    @include breakpoint(medium down)
+      display: none
+
+.top-social
+  .menu
+    justify-content: flex-start
+
+.secondary-menu
+  .menu
+    justify-content: flex-end
 
 .main-nav
+  background-color: $white
+  background-image: url("../img/ps-neutral.png")
+  padding: 15px 0
+  border-bottom: 1px solid $light-gray
+  font-size: rem-calc(14)
+
+.mobile-menu
+  position: relative
+
+.mobile-btn-wrap
+  position: absolute
+  right: 0
+  top: -20px
+
+.mobile-btn
+  width: 40px
+  height: 41px
+  position: relative
+  transform: rotate(0deg)
+  transition: .2s ease-in-out
+  cursor: pointer
+  z-index: 9999
+
+  span
+    display: block
+    position: absolute
+    height: 6px
+    width: 20px
+    background: $black
+    opacity: 1
+    transform: rotate(0deg)
+    transition: .25s ease-in-out
+
+  span:nth-child(even)
+    left: 50%
+    border-radius: 0 30px 30px 0
+
+  span:nth-child(odd)
+    left: 0px
+    border-radius: 30px 0 0 30px
+
+  span:nth-child(1), span:nth-child(2)
+    top: 5px
+
+  span:nth-child(3), span:nth-child(4)
+    top: 18px
+
+  span:nth-child(5), span:nth-child(6)
+    top: 31px
+
+
+.open
+  span
+    background: $red
+
+
+  span:nth-child(1), span:nth-child(6)
+    transform: rotate(45deg)
+
+  span:nth-child(2), span:nth-child(5)
+    transform: rotate(-45deg)
+
+  span:nth-child(1)
+    left: 5px
+    top: 10px
+
+  span:nth-child(2)
+    left: calc(50% - 5px)
+    top: 10px
+
+  span:nth-child(3)
+    left: -50%
+    opacity: 0
+
+  span:nth-child(4)
+    left: 100%
+    opacity: 0
+
+  span:nth-child(5)
+    left: 5px
+    top: 20px
+
+  span:nth-child(6)
+    left: calc(50% - 5px)
+    top: 20px
+
+
+.mobile-menu-overlay
+  z-index: 1500
+  position: fixed
+  top: 100px
+  left: 0
+  width: 100%
+  max-height: calc(100% - 100px)
+  background: $red none repeat scroll 0 0
+  display: none
+  overflow: auto
+  border-bottom: 2px solid $black
+
+  @include breakpoint(medium down)
+    @include breakpoint(landscape)
+      height: 100%
+      top: 90px
+
+  ul
+    text-align: center
+    margin-left: 0
+
+    li
+      list-style: none
+
+      a
+        display: block
+        color: $white
+        font-weight: 700
+        text-transform: uppercase
+        font-size: rem-calc(12)
+        letter-spacing: 2px
+        line-height: 2.5rem
+
+        @include breakpoint(landscape)
+          @include breakpoint(medium down)
+            font-size: 1.25rem
+            line-height: 2.5rem
+
+ul.primary-mobile-menu
+  margin-bottom: 0
+
+  li
+    border-bottom: 1px solid darken($red,5%)
+
+    &:hover
+      background: darken($red, 10%)
+
+ul.secondary-mobile-menu
+  background-color: $white
+  li
+    border-bottom: 1px solid $light-gray
+
+    &:hover
+      background: darken($white, 10%)
+
+    a
+      color: $medium-black
+
+.mobile-menu-open
+  display: block
+
+.primary-menu
+  ul.menu
+    border-right: 1px solid $medium-gray
+    padding: rem-calc(15)
+
+    li
+      padding: 0 1rem
+
+      a
+        color: $dark-gray
+        padding: 0.7rem 0
+
+        &:hover
+          color: $red
+
+  @include breakpoint(medium down)
+    display: none
+
+.logo
+  justify-content: flex-start
+
+  @include breakpoint(small only)
+    margin-left: 0
+
+  img
+    width: 50%
+    display: block
+    margin: auto 1rem
+
+    @include breakpoint(medium down)
+      width: 65%
+
+.fp-login
+  @include breakpoint(medium down)
+    display: none
+
+.fp-logo
+  img
+    width: 60%
+    display: block
+    margin: auto 1rem
+
+.fp-login-link
+  font-size: rem-calc(10)
+  padding: 0 3px
+  color: $red

@@ -1,0 +1,58 @@
+.main-footer
+  background-color: lighten($black, 10%)
+  padding: 0 0 120px
+
+  .footer-widget-cell
+    padding-top: rem-calc(60)
+    color: $white
+
+    h5
+      color: $red
+
+  ul.footer-widget-links
+    list-style: none
+    margin-left: 0
+
+    li
+      padding: 5px 0
+
+    a
+      color: $white
+      text-transform: capitalize
+      font-weight: 700
+
+      &:hover
+        color: $red
+
+.bottom-footer
+  padding: 12px 0 10px
+  background-color: $black
+  border-top: 2px solid $red
+
+.bottom-footer-align
+  @include flex-align(center, middle)
+
+
+  .bf-copyright
+    color: $white
+    font-weight: 700
+
+    p
+      margin-bottom: 0
+
+    @include breakpoint(small only)
+      font-size: 1rem
+      text-align: center
+
+  .bf-social
+    .menu
+      justify-content: flex-end
+
+      @include breakpoint(small only)
+        justify-content: center
+
+    a
+      color: $white
+
+      &:hover
+        color: $yellow

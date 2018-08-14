@@ -67,7 +67,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1600);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -80,7 +80,12 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
+$medium-black: #3e3e3e;
 $white: #fefefe;
+$red: #e31b23;
+$yellow: #ffc425;
+$green: #c3d83d;
+$blue: #4f9adc;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
@@ -283,7 +288,7 @@ $button-font-family: inherit;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $red;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
@@ -518,8 +523,8 @@ $maincontent-class: 'off-canvas-content';
 // 26. Orbit
 // ---------
 
-$orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $dark-gray;
+$orbit-bullet-background: $white;
+$orbit-bullet-background-active: $red;
 $orbit-bullet-diameter: 1.2rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;

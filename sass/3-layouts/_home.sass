@@ -1,4 +1,9 @@
 .fullscreen-image-slider
+  padding-top: 80px
+
+  @include breakpoint(large)
+    padding-top: 131px
+
   .orbit-image
     width: 100%
     height: 65vh
@@ -15,18 +20,36 @@
     color: $white
     text-shadow: 2px 3px 7px $black
 
-    @include breakpoint(medium down)
-      padding: 1rem
-
-      h1
-        font-size: 2rem
-
     p
       font-size: rem-calc(18)
       text-shadow: 2px 3px 5px $black
 
       @include breakpoint(medium down)
         font-size: 1rem
+
+    @include breakpoint(small)
+      padding-left: 1rem
+
+      .button
+        font-size: 0.8rem
+
+      h1
+        font-size: 0.9rem
+
+    @include breakpoint(medium)
+      padding-left: 3.75rem
+
+      h1
+        font-size: 2rem
+
+      .button
+        font-size: 1rem
+
+
+    @include breakpoint(large)
+      padding-left: 5rem
+
+
 
 .orbit-previous, .orbit-next
   top: 50%
@@ -78,38 +101,56 @@
 
 .rewards-steps-circle
   position: relative
-  margin: 0 3.5rem
+  margin: 0 0.4rem
   display: block
   background: $white
   border-radius: 50%
-  height: 200px
-  width: 200px
+  height: 60px
+  width: 60px
 
-  @include breakpoint(small only)
-    margin: 0 0.4rem
-    height: 75px
-    width: 75px
+  @include breakpoint(414px)
+    height: 80px
+    width: 80px
 
-  @include breakpoint(medium down)
+  @include breakpoint(375px)
     @include breakpoint(landscape)
-      margin: 0 1rem
-      height: 100px
-      width: 100px
+      margin: 0 0.8rem
+      height: 80px
+      width: 80px
+
+  @include breakpoint(medium)
+    margin: 0 1rem
+    height: 100px
+    width: 100px
+
+  @include breakpoint(large)
+    margin: 0 2.5rem
+    height: 150px
+    width: 150px
+
+  @include breakpoint(xlarge)
+    margin: 0 3.5rem
+    height: 200px
+    width: 200px
 
   &:after
     content: ""
     position: absolute
-    width: 45%
+    width: 80%
     height: 1px
     top: 50%
     border: 1px solid $white
     display: block
-    right: calc(-50% + 1px)
+    right: calc(-80% + 1px)
     z-index: 1
 
     @include breakpoint(small only)
-      width: 20%
-      right: calc(-20% + 1px)
+      width: 25%
+      right: calc(-25% + 1px)
+
+    @include breakpoint(414px)
+      width: 60%
+      right: calc(-60% + 1px)
 
     @include breakpoint(medium down)
       @include breakpoint(landscape)
@@ -133,27 +174,47 @@
 
     .fas
       color: $red
-      font-size: 3.5rem
+      font-size: 1.2rem
 
-      @include breakpoint(small only)
-        font-size: 1.5rem
+      @include breakpoint(375px)
+        @include breakpoint(landscape)
+          font-size: 1.8rem
 
-      @include breakpoint(medium down)
+      @include breakpoint(414px)
+        font-size: 1.8rem
+
+      @include breakpoint(medium)
         @include breakpoint(landscape)
           font-size: 2rem
+
+      @include breakpoint(large)
+        font-size: 2.5rem
+
+      @include breakpoint(xlarge)
+        font-size: 3.5rem
 
     span
       display: block
       font-weight: 800
       color: $red
-      font-size: rem-calc(32)
+      font-size: 0.8rem
 
-      @include breakpoint(small only)
+      @include breakpoint(375px)
+        @include breakpoint(landscape)
+          font-size: 1rem
+
+      @include breakpoint(414px)
         font-size: 1rem
 
-      @include breakpoint(medium down)
+      @include breakpoint(medium)
         @include breakpoint(landscape)
           font-size: 1.2rem
+
+      @include breakpoint(large)
+        font-size: 1.5rem
+
+      @include breakpoint(xlarge)
+        font-size: rem-calc(32)
 
 .join-today-heading
   h2
@@ -207,7 +268,7 @@
 
 .careers-home
   position: relative
-  padding: 0 0 120px
+  padding-bottom: 60px
   background: $yellow url("../img/wavecut.png")
 
   .section-title

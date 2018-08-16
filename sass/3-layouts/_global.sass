@@ -1,4 +1,7 @@
 /******** Globals *******/
+body
+  position: relative
+  height: 100%
 
 /* Semantics for Containers, Grids, and Cells*/
 .container
@@ -6,7 +9,9 @@
 
 .site-wrapper
   position: relative
-
+  min-height: 100vh
+  overflow: hidden
+  display: block
 
 .content-wrapper
   width: 100%
@@ -68,6 +73,10 @@
   @include breakpoint(large)
     @include xy-cell(3)
 
+.faq-accordion
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(8)
 
 .employee-cutout
   @include xy-cell(12)

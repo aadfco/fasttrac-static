@@ -70,7 +70,7 @@
               <!-- Begin Desktop Navigation Menus -->
               <nav class="primary-menu">
                 <ul class="menu">
-                  <li><a href="rewards.php">fast points</a></li>
+                  <li><a href="./rewards.php">fast points</a></li>
                   <li><a href="#">fresh food</a></li>
                   <li><a href="#">coffee &amp; drinks</a></li>
                   <li><a href="#">locations</a></li>

@@ -52,7 +52,7 @@
                 </div>
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay" data-toggler=".mobile-menu-open" data-animate="hinge-in-from-top hinge-out-from-top">
                   <ul class="primary-mobile-menu">
-                    <li><a href="#">fast points</a></li>
+                    <li><a href="/rewards.php">fast points</a></li>
                     <li><a href="#">fresh food</a></li>
                     <li><a href="#">coffee &amp; drinks</a></li>
                     <li><a href="#">locations</a></li>
@@ -70,7 +70,7 @@
               <!-- Begin Desktop Navigation Menus -->
               <nav class="primary-menu">
                 <ul class="menu">
-                  <li><a href="#">fast points</a></li>
+                  <li><a href="rewards.php">fast points</a></li>
                   <li><a href="#">fresh food</a></li>
                   <li><a href="#">coffee &amp; drinks</a></li>
                   <li><a href="#">locations</a></li>

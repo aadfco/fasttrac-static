@@ -20,7 +20,7 @@
               </figcaption>
             </li>
             <li class="orbit-slide">
-              <img class="orbit-image" src="https://i.imgur.com/JD4Caxa.jpg" alt="Space">
+              <img class="orbit-image" src="img/happyguy.jpg" alt="Space">
               <figcaption class="orbit-caption">
                 <h1>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</h1>
               </figcaption>

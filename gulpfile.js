@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
-var reload = browserSync.reloac
+var reload = browserSync.reload
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',

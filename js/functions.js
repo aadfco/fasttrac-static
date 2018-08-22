@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.hamburger').click(function(){
 		$(this).toggleClass('is-active');
 	});
-});
+
 
 var  mn = $(".main-nav");
     mms = "mobile-menu-scroll";
@@ -14,4 +14,23 @@ $(window).scroll(function() {
   } else {
     mn.removeClass(mms);
   }
+});
+
+
+//Hide Drinks on page load
+$(".drinks").hide();
+
+// shows and hides filtered items
+$(".filter-simple-button").click(function() {
+  var value = $(this).attr('data-filter');
+    $(".stacked-wrapper").not('.'+value).hide();
+    $('.stacked-wrapper').filter('.'+value).show();
+});
+
+// changes active class on filter buttons
+$('.filter-simple-button').click(function () {
+  $(this).siblings().removeClass('is-active');
+  $(this).addClass('is-active');
+});
+
 });

@@ -1,5 +1,5 @@
   <footer>
-    <nav class="main-footer">
+    <div class="main-footer">
       <div class="container">
         <div class="inner-row">
           <div class="footer-widget-cell">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </div>
     <div class="bottom-footer">
       <div class="container">
         <div class="inner-row bottom-footer-align">

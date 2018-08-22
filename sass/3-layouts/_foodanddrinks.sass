@@ -1,0 +1,28 @@
+.filter-simple
+  .tab-nav-group
+    justify-content: center
+    text-align: center
+    background: $minimalred-top-gradient
+    // background-image: url('../img/zig-zag.png')
+
+  .filter-simple-button
+    border-radius: 0
+    transition: border 0.15s ease-in-out
+    border-top: 2px solid transparent
+
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active
+      border-top: 2px solid $white
+
+.tab-btn
+  font-weight: 700
+  text-transform: uppercase
+  font-size: rem-calc(14)
+  padding: 1rem
+  color: $white
+  cursor: pointer
+
+.food, .drinks
+  @include mui-fade(in)

@@ -24,7 +24,7 @@
               <nav class="secondary-menu">
                 <ul class="menu">
                   <li><a href="#">about us</a></li>
-                  <li><a href="#">news</a></li>
+                  <li><a href="./news.php">news</a></li>
                   <li><a href="#">community</a></li>
                   <li><a href="#">careers</a></li>
                   <li><a href="#">contact</a></li>
@@ -52,14 +52,14 @@
                 </div>
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay" data-toggler=".mobile-menu-open" data-animate="hinge-in-from-top hinge-out-from-top">
                   <ul class="primary-mobile-menu">
-                    <li><a href="/rewards.php">fast points</a></li>
-                    <li><a href="#">fresh food</a></li>
-                    <li><a href="#">coffee &amp; drinks</a></li>
+                    <li><a href="./fastpoints.php">fast points</a></li>
+                    <li><a href="./foodanddrinks.php">fresh food</a></li>
+                    <li><a href="./foodanddrinks.php">coffee &amp; drinks</a></li>
                     <li><a href="#">locations</a></li>
                   </ul>
                   <ul class="secondary-mobile-menu">
                     <li><a href="#">about us</a></li>
-                    <li><a href="#">news</a></li>
+                    <li><a href="./news.php">news</a></li>
                     <li><a href="#">community</a></li>
                     <li><a href="#">careers</a></li>
                     <li><a href="#">contact</a></li>
@@ -70,9 +70,9 @@
               <!-- Begin Desktop Navigation Menus -->
               <nav class="primary-menu">
                 <ul class="menu">
-                  <li><a href="./rewards.php">fast points</a></li>
-                  <li><a href="#">fresh food</a></li>
-                  <li><a href="#">coffee &amp; drinks</a></li>
+                  <li><a href="./fastpoints.php">fast points</a></li>
+                  <li><a href="./foodanddrinks.php">fresh food</a></li>
+                  <li><a href="./foodanddrinks.php">coffee &amp; drinks</a></li>
                   <li><a href="#">locations</a></li>
                 </ul>
               </nav>

@@ -3,6 +3,13 @@ body
   position: relative
   height: 100%
 
+footer
+  // position: absolute
+  // width: 100%
+  // left: 0
+  // bottom: 0
+
+
 /* Semantics for Containers, Grids, and Cells*/
 .container
   @include xy-grid-container
@@ -96,6 +103,14 @@ body
   @include xy-cell(12)
   @include breakpoint(medium)
     @include xy-cell(6)
+
+.stack-media, .stack-content
+  @include xy-cell(full, true, 0)
+  @include breakpoint(large)
+    @include xy-cell(6, true, 0)
+
+.news-card, .news-card-2
+  @extend .cell
 
 /* Animations */
 .slide-in-top
@@ -229,3 +244,52 @@ h1, h2, h3, h4, h5, h6
     &:active
       transform: translate(0px, 3px)
       border-bottom: 1px solid darken($white, 15%)
+
+/* Color Gradients */
+$minimalred-top-gradient: linear-gradient(to top, #f00000, #dc281e)
+$youtube-top-gradient: linear-gradient(to top, #e52d27, #b31217)
+$youtube-right-gradient: linear-gradient(to right, #e52d27, #b31217)
+$servquick-top-gradient: linear-gradient(to top, #29323c, #485563)
+$servquick-bottom-gradient: linear-gradient(to bottom, #29323c, #485563)
+$servquick-left-gradient: linear-gradient(to left, #29323c, #485563)
+$fasttrac-gradient: linear-gradient(180deg, rgb(227, 27, 35), rgb(255, 196, 37))
+$black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
+
+
+/* Headers and Heroes */
+.page-hero
+  background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url('../img/checkout.jpg') top right no-repeat
+  background-size: cover
+  display: flex
+  align-items: center
+  padding-top: 80px
+  // padding-bottom: 60px
+
+  @include breakpoint(large)
+    padding-top: 131px
+
+  @media screen and (min-width: 40em)
+    background-position: center center
+
+
+
+.page-hero-content
+  max-width: $global-width
+  margin: 0 auto
+  padding-left: 5%
+  padding-right: 5%
+
+  h1
+    color: $white
+
+  p.subheader
+    color: $white
+
+
+  .button
+    margin-top: 15px
+    margin-bottom: 0
+
+
+  @media screen and (min-width: 40em)
+    padding-right: 20%

@@ -56,7 +56,7 @@
           <div class="inner-row earn-steps align-center">
 
             <div class="rewards-steps-circle">
-              <div class="circle-content ">
+              <div class="circle-content">
                 <i class="fas fa-laptop"></i>
                 <span>Join</span>
               </div>

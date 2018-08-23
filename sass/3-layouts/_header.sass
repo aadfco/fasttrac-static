@@ -214,9 +214,28 @@ ul.secondary-mobile-menu
 
   @include breakpoint(medium down)
     display: none
+.logo-2
+  margin-top: -12px
+  @include xy-cell(50%)
+  @include breakpoint(medium)
+    @include xy-cell(15%)
+  @include breakpoint(large)
+    @include xy-cell(25%)
+    margin-top: -22px
+
+  @include breakpoint(xlarge)
+    margin-top: -30px
+
+  img
+    width: 90%
+
+    @include breakpoint(large)
+      width: 75%
+
+    @include breakpoint(xlarge)
+      width: 60%
 
 .logo
-  justify-content: flex-start
 
   @include breakpoint(small only)
     margin-left: 0
@@ -254,7 +273,7 @@ ul.secondary-mobile-menu
       width: 90%
 
     @include breakpoint(xxlarge)
-      width: 80%  
+      width: 80%
 
 
 .fp-login

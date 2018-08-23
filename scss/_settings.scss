@@ -191,7 +191,7 @@ $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $medium-gray;
+$blockquote-border: 2px solid $red;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
 $cite-pseudo-content: '\2014 \0020';
@@ -358,8 +358,8 @@ $closebutton-size: (
   medium: 2em,
 );
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color: $white;
+$closebutton-color-hover: $light-gray;
 
 // 16. Drilldown
 // -------------
@@ -819,7 +819,7 @@ $tab-content-padding: 1rem;
 $thumbnail-border: solid 4px $white;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($red, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 

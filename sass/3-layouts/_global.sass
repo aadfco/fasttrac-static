@@ -60,9 +60,6 @@ footer
   @include breakpoint(xxlarge)
     @include xy-cell(10%)
 
-.section-title
-  @include xy-cell()
-
 .section-content
   @include breakpoint(small)
     @include xy-cell(12)
@@ -111,6 +108,19 @@ footer
 
 .news-card, .news-card-2
   @extend .cell
+
+.post-content
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(8)
+
+.post-gallery
+  @include xy-grid()
+  @include xy-grid-layout(2, '.post-gallery-img-thumb')
+  @include breakpoint(medium)
+    @include xy-grid-layout(3, '.post-gallery-img-thumb')
+  @include breakpoint(large)
+    @include xy-grid-layout(4, '.post-gallery-img-thumb')
 
 /* Animations */
 .slide-in-top
@@ -274,10 +284,9 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 
 
 .page-hero-content
-  max-width: $global-width
+  display: inline-block
   margin: 0 auto
-  padding-left: 5%
-  padding-right: 5%
+  padding: 0 5%
 
   h1
     color: $white
@@ -289,7 +298,6 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   .button
     margin-top: 15px
     margin-bottom: 0
+    font-size: 1.5rem
 
-
-  @media screen and (min-width: 40em)
-    padding-right: 20%
+/* Page and Post Content */

@@ -1,0 +1,112 @@
+.contact
+  height: 55vh
+
+  .page-hero-content
+    text-align: center
+    padding: 0
+
+.contact-info
+  padding-top: rem-calc(60)
+  text-align: center
+  position: relative
+
+  &:after
+    content: ""
+    position: absolute
+    width: 25%
+    height: 1px
+    top: 40%
+    border: 1px solid $light-gray
+    display: block
+    right: calc(-25% + 1px)
+    z-index: 1
+
+    @include breakpoint(414px)
+      width: 60%
+      right: calc(-60% + 1px)
+
+    @include breakpoint(medium down)
+      @include breakpoint(landscape)
+        width: 35%
+        right: calc(-35% + 1px)
+
+    @include breakpoint(large)
+      width: 40%
+      right: -20%
+
+  &:last-child
+    &:after
+      display: none
+
+.contact-circle
+  position: relative
+  margin: 0 0.4rem
+  display: block
+  background: $red
+  border-radius: 50%
+  height: 60px
+  width: 60px
+
+  @include breakpoint(414px)
+    height: 80px
+    width: 80px
+
+  @include breakpoint(375px)
+    @include breakpoint(landscape)
+      margin: 0 0.8rem
+      height: 80px
+      width: 80px
+
+  @include breakpoint(medium)
+    margin: 0 1rem
+    height: 100px
+    width: 100px
+
+  @include breakpoint(large)
+    margin: 0 6rem
+    height: 150px
+    width: 150px
+
+.circle-icon
+  text-align: center
+  transform: translateY(75%)
+
+  @include breakpoint(small only)
+    transform: translateY(25%)
+
+  @include breakpoint(medium down)
+    @include breakpoint(landscape)
+      transform: translateY(35%)
+
+  .fas
+    color: $white
+    font-size: 1.2rem
+
+    @include breakpoint(375px)
+      @include breakpoint(landscape)
+        font-size: 1.8rem
+
+    @include breakpoint(414px)
+      font-size: 1.8rem
+
+    @include breakpoint(medium)
+      @include breakpoint(landscape)
+        font-size: 2rem
+
+    @include breakpoint(large)
+      font-size: 2.5rem
+
+    @include breakpoint(xlarge)
+      font-size: 3.5rem
+
+.contact-details
+  h1
+    font-size: 1.8rem
+    margin-top: 0.5rem
+    margin-bottom: 0
+
+  p
+    font-size: 1.125rem
+
+  span
+    display: block

@@ -22,6 +22,13 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
+//basically just keeping an eye on all PHP files
+gulp.task('php', function() {
+    //watch any and all HTML files and refresh when something changes
+    return gulp.src('./*.php')
+        .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task('default', ['sass'], function() {
 
   browserSync.init({
@@ -33,5 +40,5 @@ gulp.task('default', ['sass'], function() {
   //gulp.watch(['scss/**/*.scss'], ['sass']);
   gulp.watch("./scss/*.scss", ['sass']);
   gulp.watch("./sass/**/*.sass", ['sass']);
-  gulp.watch("./*.php").on('change', browserSync.reload);
+  gulp.watch("./*.php", ['php']).on('change', browserSync.reload);
 });

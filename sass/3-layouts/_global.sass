@@ -122,6 +122,11 @@ footer
   @include breakpoint(large)
     @include xy-grid-layout(4, '.post-gallery-img-thumb')
 
+.map-wrapper, .contact-form-wrapper
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(6)
+
 /* Animations */
 .slide-in-top
   @include mui-slide

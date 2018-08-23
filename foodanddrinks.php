@@ -1,7 +1,7 @@
 <?php include('header.php') ?>
 
-<div class="marketing-site-hero">
-  <div class="marketing-site-hero-content">
+<div class="page-hero food-and-drinks">
+  <div class="page-hero-content">
     <h1 class="standard-shadow">earn rewards immediately at checkout!</h1>
     <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
     <a href="#" class="button">learn more</a>

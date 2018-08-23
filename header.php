@@ -27,7 +27,7 @@
                   <li><a href="./news.php">news</a></li>
                   <li><a href="#">community</a></li>
                   <li><a href="#">careers</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="./contact.php">contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -62,7 +62,7 @@
                     <li><a href="./news.php">news</a></li>
                     <li><a href="#">community</a></li>
                     <li><a href="#">careers</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="./contact.php">contact</a></li>
                   </ul>
                 </div>
               </nav>

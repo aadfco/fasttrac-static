@@ -38,11 +38,9 @@ footer
 .logo
   @include xy-cell(6)
   @include breakpoint(medium)
-    @include xy-cell(30%)
+    @include xy-cell(50%)
   @include breakpoint(large)
     @include xy-cell(20%)
-  @include breakpoint(xlarge)
-    @include xy-cell(12%)
 
 .mobile-menu
   @include xy-cell(6)
@@ -57,8 +55,6 @@ footer
   @include xy-cell(15%)
   @include breakpoint(xlarge)
     @include xy-cell(12%)
-  @include breakpoint(xxlarge)
-    @include xy-cell(10%)
 
 .section-content
   @include breakpoint(small)
@@ -122,6 +118,11 @@ footer
   @include breakpoint(large)
     @include xy-grid-layout(4, '.post-gallery-img-thumb')
 
+.contact-info
+  @include xy-cell(6)
+  @include breakpoint(large)
+    @include xy-cell(3)
+
 .map-wrapper, .contact-form-wrapper
   @include xy-cell(12)
   @include breakpoint(large)
@@ -136,20 +137,6 @@ h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   letter-spacing: 1px
   font-weight: 800
-
-.section-title
-  text-align: center
-  padding-top: rem-calc(60)
-  width: 100%
-
-  h1
-    font-size: rem-calc(60)
-
-    @include breakpoint(small only)
-      font-size: 3rem
-
-.section-content
-  padding-top: rem-calc(60)
 
 /* Text Effects */
 .standard-shadow
@@ -281,8 +268,6 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   padding-top: 80px
   // padding-bottom: 60px
 
-  @include breakpoint(large)
-    padding-top: 131px
 
   @media screen and (min-width: 40em)
     background-position: center center
@@ -307,3 +292,16 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
     font-size: 1.5rem
 
 /* Page and Post Content */
+.section-title
+  text-align: center
+  padding-top: rem-calc(60)
+  width: 100%
+
+  h1
+    font-size: rem-calc(60)
+
+    @include breakpoint(small only)
+      font-size: 3rem
+
+.section-content
+  padding-top: rem-calc(60)

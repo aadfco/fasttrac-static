@@ -11,22 +11,19 @@
               <span class="show-for-sr">Next Slide</span>
               <span class="nav fa fa-chevron-right fa-3x"></span>
             </button>
-            <li class="is-active orbit-slide">
-              <img class="orbit-image" src="img/slides/fastpoints-slide-1.jpg" alt="Fast Points Rewards">
+            <li class="is-active orbit-slide slide-1">
               <figcaption class="orbit-caption">
                 <h1>Get Rewarded with Fast Points</h1>
                 <p>With Fast Points, you immediately receive rewards at checkout!</p>
                 <a href="#" class="button">Learn More</a>
               </figcaption>
             </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="img/happyguy.jpg" alt="Space">
+            <li class="orbit-slide slide-2">
               <figcaption class="orbit-caption">
                 <h1>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</h1>
               </figcaption>
             </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="https://i.imgur.com/rsTQbNV.jpg" alt="Space">
+            <li class="orbit-slide slide-3">
               <figcaption class="orbit-caption">
                 <h1>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</h1>
               </figcaption>

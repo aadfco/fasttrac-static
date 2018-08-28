@@ -8,6 +8,13 @@
     @include breakpoint(small only)
       height: 45vh
 
+
+.orbit-container
+  height: 100%
+
+.orbit-slide
+  height: 70vh
+
 .orbit-caption
     bottom: 50%
     transform: translateY(50%)
@@ -46,16 +53,27 @@
     @include breakpoint(large)
       padding-left: 5rem
 
+.slide-1, .slide-2, .slide-3
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.slide-1
+  background-image: url('../img/slides/slide-1.jpg')
+
+.slide-2
+  background-image: url('../img/slides/slide-2@1200px.jpg')
+
+.slide-3
+  background-image: url('../img/slides/slide-3@1200px.jpg')
 
 
 .orbit-previous, .orbit-next
   top: 50%
+  background-color: rgba($black, 0.5)
 
   @include breakpoint(medium down)
     display: none
-
-.red-text
-  color: $red
 
 .orbit-bullets
   position: absolute

@@ -53,7 +53,10 @@
         </div>
         <div class="contact-details">
           <h1>Address</h1>
-          <p>1057 Trumbull Ave., Suite A<span>Girard, Ohio 44420</span></p>
+          <p>1057 Trumbull Ave.
+          <span>Suite A</span>
+          <span>Girard, Ohio 44420</span>
+          </p>
 
         </div>
       </div>

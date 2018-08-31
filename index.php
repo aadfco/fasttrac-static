@@ -86,7 +86,7 @@
           </div>
 
           <div class="inner-row align-center wow animated bounceIn animation-delay-300ms">
-              <a href="#" class="button yellow-btn">Learn More</a>
+              <a href="./fastpoints.php" class="button yellow-btn">Learn More</a>
           </div>
 
           <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">

@@ -39,25 +39,6 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header class="alternate">
-          <h1>News Post Title</h1>
-        </header>
-        <div class="post-date">
-          <i class="fas fa-calendar-alt"></i>
-          <span>August 19, 2018</span>
-        </div>
-        <div class="post-excerpt">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever...</p>
-        </div>
-        <div class="post-button">
-          <a href="./single.php" class="button">Read More</a>
-        </div>
-      </article>
-
-      <article class="news-card-2"><a href="./single.php" class="post-link">
-        <div class="card-image">
-          <img src="img/featured_post_image-thumb.jpg" alt="">
-        </div>
         <header>
           <h1>News Post Title</h1>
         </header>
@@ -68,12 +49,7 @@
         <div class="post-excerpt">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever...</p>
         </div>
-        <!-- <a href="#" class="button">Read More</a> -->
-        </a>
-        <div class="post-category-2">
-          <i class="fas fa-folder-open"></i>
-          <a href="#"><span>community</span></a>
-        </div>
+        <a href="./single.php" class="button">Read More</a>
       </article>
 
       <article class="news-card">
@@ -105,7 +81,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header class="alternate">
+        <header>
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -115,14 +91,16 @@
         <div class="post-excerpt">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever...</p>
         </div>
-        <div class="post-button">
-          <a href="./single.php" class="button">Read More</a>
-        </div>
+        <a href="./single.php" class="button">Read More</a>
       </article>
 
-      <article class="news-card-2"><a href="./single.php" class="post-link">
+      <article class="news-card">
         <div class="card-image">
           <img src="img/featured_post_image-thumb.jpg" alt="">
+        </div>
+        <div class="post-category">
+          <i class="fas fa-folder-open"></i>
+          <span>community</span>
         </div>
         <header>
           <h1>News Post Title</h1>
@@ -134,13 +112,31 @@
         <div class="post-excerpt">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever...</p>
         </div>
-        <!-- <a href="#" class="button">Read More</a> -->
-        </a>
-        <div class="post-category-2">
-          <i class="fas fa-folder-open"></i>
-          <a href="#"><span>community</span></a>
-        </div>
+        <a href="./single.php" class="button">Read More</a>
       </article>
+
+      <article class="news-card">
+        <div class="card-image">
+          <img src="img/featured_post_image-thumb.jpg" alt="">
+        </div>
+        <div class="post-category">
+          <i class="fas fa-folder-open"></i>
+          <span>community</span>
+        </div>
+        <header>
+          <h1>News Post Title</h1>
+        </header>
+        <div class="post-date">
+          <i class="fas fa-calendar-alt"></i>
+          <span>August 19, 2018</span>
+        </div>
+        <div class="post-excerpt">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever...</p>
+        </div>
+        <a href="./single.php" class="button">Read More</a>
+      </article>
+
+
 
     </div>
   </div>

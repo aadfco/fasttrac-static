@@ -4,6 +4,9 @@ body
   height: 100%
   padding-top: 80px
 
+  @include breakpoint(large)
+    padding-top: 106px
+
 footer
   // position: absolute
   // width: 100%
@@ -270,23 +273,20 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 
 /* Headers and Heroes */
 .page-hero
-  background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url('../img/checkout.jpg') top right no-repeat
+  background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url('../img/checkout.jpg') center center no-repeat
   background-size: cover
   display: flex
   align-items: center
-  padding-top: 80px
-  // padding-bottom: 60px
-
-
-  @media screen and (min-width: 40em)
-    background-position: center center
+  height: 65vh
 
 
 
 .page-hero-content
   display: inline-block
   margin: 0 auto
-  padding: 0 5%
+  padding: 0 15%
+
+
 
   h1
     color: $white
@@ -298,7 +298,14 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   .button
     margin-top: 15px
     margin-bottom: 0
-    font-size: 1.5rem
+    font-size: 1rem
+
+    @include breakpoint(large)
+      font-size: 1.2rem
+
+.centered
+  text-align: center
+  padding: 0
 
 /* Page and Post Content */
 .section-title

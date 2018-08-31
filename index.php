@@ -41,16 +41,16 @@
         <div class="container">
           <div class="inner-row">
             <div class="section-title">
-              <h1 class="superhero">Fast Trac Rewards</h1>
+              <h1 class="superhero wow animated bounceIn animation-delay-300ms">Fast Trac Rewards</h1>
             </div>
           </div>
           <div class="inner-row align-center">
-            <figure class="section-content">
+            <figure class="section-content wow animated fadeIn animation-delay-300ms">
               <h2 class="standard-shadow">Earn Points Faster with Every Swipe!</h2>
               <p>Earn 50 points per dollar by using your card for purchases at Speedway, in addition to the loyalty points you may earn today, and 10 points everywhere else when you use your card.</p>
             </figure>
           </div>
-          <div class="inner-row earn-steps align-center">
+          <div class="inner-row earn-steps align-center wow animted lightSpeedIn animation-delay-300ms">
 
             <div class="rewards-steps-circle">
               <div class="circle-content">
@@ -85,16 +85,16 @@
 
           </div>
 
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated bounceIn animation-delay-300ms">
               <a href="#" class="button yellow-btn">Learn More</a>
           </div>
 
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">
             <div class="join-today-heading section-content">
               <h2 class="standard-shadow">Join Today and Start Earning!</h2>
             </div>
           </div>
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated bounceIn animation-delay-300ms">
             <div class="btn-row">
             <a href="#" class="button black-btn">Login</a>
             <a href="#" class="button white-btn">Sign Up</a>
@@ -108,21 +108,23 @@
         <div class="container">
           <div class="inner-row align-center">
             <div class="section-title">
-              <h1 class="superhero">fast trac locator</h1>
+              <h1 class="superhero wow animated bounceIn animation-delay-300ms">fast trac locator</h1>
+            </div>
+            <div class="section-content wow animated fadeIn animation-delay-300ms">
               <p>With 31 locations and growing while serving over 1 million customers a year!</p>
             </div>
           </div>
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">
             <div class="store-locator-form">
               <label>Search for the nearest Fast Trac location.
                 <input type="text" placeholder="Zip Code/City, State">
               </label>
             </div>
           </div>
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">
             <h2>or</h2>
           </div>
-          <div class="inner-row align-center">
+          <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">
             <a href="#" class="button">use my location <i class="fas fa-map-marker-alt"></i></a>
           </div>
         </div>
@@ -133,15 +135,15 @@
         <div class="container">
           <div class="inner-row">
             <div class="section-title">
-              <h1 class="standard-shadow">join the team</h1>
+              <h1 class="standard-shadow wow animated lightSpeedIn">join the team</h1>
             </div>
           </div>
           <div class="inner-row">
-            <div class="section-content small-order-2 medium-order-1">
+            <div class="section-content small-order-2 medium-order-1 wow animated slideInLeft animation-delay-300ms">
               <p>Many of our long-term, seasoned employees began their careers right here. From your first day, you’ll discover why so many have chosen to build their career at Fast Trac.</p>
               <a href="#" class="button">browse careers</a>
             </div>
-            <div class="employee-cutout small-order-1 medium-order-2">
+            <div class="employee-cutout small-order-1 medium-order-2 wow animated slideInRight animation-delay-300ms">
               <img src="img/employee-cut.png" alt="">
             </div>
           </div>

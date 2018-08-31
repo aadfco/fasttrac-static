@@ -59,10 +59,11 @@
   </footer>
 </div><!-- end site-wrapper -->
 
-<script src="js/jquery.js"></script>
-<script src="js/what-input.js"></script>
-<script src="js/foundation.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/what-input.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
-<script src="js/functions.js"></script>
+<!-- <script src="js/functions.js"></script> -->
 </body>
 </html>

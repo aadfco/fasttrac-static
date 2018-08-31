@@ -50,7 +50,7 @@
                     </span>
                   </button>
                 </div>
-                <div class="mobile-menu-overlay" id="mobile-menu-overlay" data-toggler=".mobile-menu-open" data-animate="hinge-in-from-top hinge-out-from-top">
+                <div class="mobile-menu-overlay transition-duration-300ms" id="mobile-menu-overlay" data-toggler data-animate="hinge-in-from-top hinge-out-from-top">
                   <ul class="primary-mobile-menu">
                     <li><a href="./fastpoints.php">fast points</a></li>
                     <li><a href="./foodanddrinks.php">fresh food</a></li>

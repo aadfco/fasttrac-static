@@ -128,6 +128,30 @@
 
           </div><!-- end post-gallery -->
 
+          <div class="widget-container">
+            <hr>
+            <h2 class="widget-title">Tags</h2>
+            <div class="tag-cloud">
+              <a href="#">community</a>
+              <a href="#">local</a>
+              <a href="#">news</a>
+              <a href="#">ohio</a>
+              <a href="#">outreach</a>
+            </div>
+            <hr>
+          </div> <!-- end widget-container -->
+
+          <div class="widget-container">
+            <div class="share-post">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+
         </div> <!-- End post-content -->
       </div> <!-- end inner-row -->
     </div> <!-- end container -->

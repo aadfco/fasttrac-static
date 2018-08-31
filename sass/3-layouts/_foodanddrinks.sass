@@ -1,34 +1,44 @@
 .food-and-drinks
-  height: 55vh
-
-  .page-hero-content
-    @media screen and (min-width: 40em)
-      padding-right: 20%
 
 .filter-simple
-  .tab-nav-group
-    justify-content: center
-    text-align: center
-    background: $minimalred-top-gradient
-    // background-image: url('../img/zig-zag.png')
 
-  .filter-simple-button
-    border-radius: 0
-    transition: border 0.15s ease-in-out
-    border-top: 2px solid transparent
+.tab-nav-group
+  justify-content: center
+  text-align: center
+  background: $minimalred-top-gradient
+  width: 100%
+  z-index: 8888
+  // background-image: url('../img/zig-zag.png')
 
-    &.is-active,
-    &:hover,
-    &:focus,
-    &:active
-      border-top: 2px solid $white
+.tab-nav-scroll
+  position: fixed
+  top: 80px
+  left: 0
+  @extend .animated
+  @extend .slideInDown
+
+  @include breakpoint(large)
+    top: 106px
+
+
+.filter-simple-button
+  border-radius: 0
+  transition: border 0.15s ease-in-out
+  border-top: 4px solid transparent
+  color: $white
+
+  &.is-active,
+  &:hover,
+  &:focus,
+  &:active
+    border-color: $yellow
+    color: $yellow
 
 .tab-btn
   font-weight: 700
   text-transform: uppercase
   font-size: rem-calc(14)
   padding: 1rem
-  color: $white
   cursor: pointer
 
 .food, .drinks

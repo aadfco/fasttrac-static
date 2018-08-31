@@ -13,7 +13,7 @@
     <button class="tab-btn filter-simple-button" data-filter="drinks">drinks</button>
   </div>
 
-  <div class="stacked-wrapper inner-row food" data-equalizer data-animate="slide-in-down slide-out-up">
+  <div class="stacked-wrapper inner-row food animated fadeIn" data-equalizer>
     <div class="stack-media large-order-2" data-equalizer-watch>
       <img src="img/breakfast.jpg" alt="">
     </div>
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <div class="stacked-wrapper inner-row drinks" data-equalizer data-animate="slide-in-down slide-out-up">
+  <div class="stacked-wrapper inner-row drinks animated fadeIn" data-equalizer>
     <div class="stack-media large-order-2" data-equalizer-watch>
       <img src="img/coffee.jpg" alt="">
     </div>

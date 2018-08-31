@@ -11,10 +11,33 @@ $(document).foundation().ready( function(){
 	$(window).scroll(function() {
 	  if( $(this).scrollTop() > 250 ) {
 	    mn.addClass(mms);
-	  } else {
+	  }
+    else {
 	    mn.removeClass(mms);
 	  }
 	});
+
+
+// Enable sticky tab nav on Food and Drinks Page
+  var   tabnav = $(".tab-nav-group");
+        tabnavScroll = "tab-nav-scroll";
+        pagehero = $(".page-hero").height();
+        stackedwrapper = $(".stacked-wrapper").height();
+        footer = $('footer').height();
+
+
+  $(window).scroll( function() {
+    if( $(this).scrollTop() > pagehero ) {
+      tabnav.addClass(tabnavScroll);
+    }
+    else {
+      tabnav.removeClass(tabnavScroll);
+    }
+  });
+
+
+
+
 
 
 	//Hide Drinks on page load

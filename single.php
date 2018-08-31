@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="page-hero single">
-  <div class="page-hero-content">
+  <div class="page-hero-content centered">
     <h1 class="standard-shadow">News Post Title</h1>
     <div class="hero-post-info">
       <div class="date-info">August 22, 2018</div>

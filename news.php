@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="page-hero news">
-  <div class="page-hero-content">
+  <div class="page-hero-content centered">
     <h1 class="standard-shadow">Fast Trac News</h1>
     <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
   </div>

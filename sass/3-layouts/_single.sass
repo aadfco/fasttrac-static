@@ -22,3 +22,33 @@
 
 .post-content-wrapper
   padding: 60px 0
+
+.tag-cloud
+
+  a
+    border: 1px solid $light-gray
+    border-radius: $global-radius
+    padding: 2px 5px
+    margin: 0px 5px 10px 0px
+    display: inline-block
+    color: $black
+    font-weight: 700
+    font-size: rem-calc(12)
+    text-transform: uppercase
+
+    &:hover
+      background-color: $red
+      color: $white
+
+.share-post
+  text-align: center
+
+  a
+    color: $black
+    padding: 0 8px
+
+    &:hover
+      color: $red
+
+    @include breakpoint(landscape)
+      padding: 0 15px  

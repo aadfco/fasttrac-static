@@ -7,6 +7,7 @@
     <a href="#" class="button">learn more</a>
   </div>
 </div>
+
 <section class="filter-simple">
   <div class="tab-nav-group">
     <button class="tab-btn filter-simple-button is-active" data-filter="food">food</button>

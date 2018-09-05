@@ -132,6 +132,15 @@ footer
   @include breakpoint(large)
     @include xy-cell(6)
 
+.counter-item
+  @include xy-cell(6)
+  @include breakpoint(small)
+    @include breakpoint(landscape)
+      width: auto
+      flex: 1 1 0px
+  @include breakpoint(medium)
+    @include xy-cell(auto)
+
 /* Animations */
 .animation-delay-500ms
   animation-delay: 500ms !important
@@ -279,8 +288,6 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   align-items: center
   height: 65vh
 
-
-
 .page-hero-content
   display: inline-block
   margin: 0 auto
@@ -306,6 +313,20 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 .centered
   text-align: center
   padding: 0
+
+/* Stacks */
+.stack-content
+  h1
+    padding-top: 30px
+
+.stack-media
+  overflow: hidden
+  min-height: 450px
+  //
+  // img
+  //   max-width: none
+  //   height: 100%
+
 
 /* Page and Post Content */
 .section-title

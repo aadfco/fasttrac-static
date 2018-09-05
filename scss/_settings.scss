@@ -80,7 +80,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$medium-black: #3e3e3e;
+$medium-black: #2f353c;
 $white: #fefefe;
 $red: #e31b23;
 $yellow: #ffc425;
@@ -800,10 +800,10 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
+$tab-background: none;
+$tab-color: $dark-gray;
+$tab-background-active: none;
+$tab-active-color: $red;
 $tab-item-font-size: rem-calc(12);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;

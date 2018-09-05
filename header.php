@@ -22,7 +22,7 @@
             </div>
             <nav class="secondary-menu">
               <ul class="menu">
-                <li><a href="#">about us</a></li>
+                <li><a href="./about.php">about us</a></li>
                 <li><a href="./news.php">news</a></li>
                 <li><a href="#">community</a></li>
                 <li><a href="#">careers</a></li>
@@ -57,7 +57,7 @@
                   <li><a href="#">locations</a></li>
                 </ul>
                 <ul class="secondary-mobile-menu">
-                  <li><a href="#">about us</a></li>
+                  <li><a href="./about.php">about us</a></li>
                   <li><a href="./news.php">news</a></li>
                   <li><a href="#">community</a></li>
                   <li><a href="#">careers</a></li>

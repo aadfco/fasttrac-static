@@ -1,0 +1,112 @@
+.about-tabs
+  padding: 60px 0
+
+.tabs-container
+  width: 100%
+
+.tabs
+  border: none
+  border-bottom: 1px solid $light-gray
+  text-align: center
+
+.tabs-content
+  border: none
+
+  p
+    padding-top: 30px
+
+.tabs-title
+  a
+    font-size: rem-calc(11)
+    font-weight: 700
+    text-transform: uppercase
+    padding: 1.25rem 0.8rem
+
+    @include breakpoint(321px)
+      font-size: rem-calc(13)
+      padding: 1.25rem 1rem
+
+    @include breakpoint(small)
+      @include breakpoint(landscape)
+        font-size: 1rem
+
+    @include breakpoint(medium)
+      font-size: 1rem
+      padding: 1.25rem 1.5rem
+
+    &:hover
+      color: $red
+
+  &:hover
+    border-bottom: 1px solid $red
+
+.tabs-title.is-active
+  border-bottom: 1px solid $red
+
+.tab-thumbnail
+  height: 340px
+  display: block
+  margin: 0 auto
+  background-image: url('../img/about-team.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+
+.sc-bc
+  background: $medium-black
+  color: $white
+
+
+.success-img
+  background-image: url('../img/fasttrac-day@1000px.jpg')
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.choose-img
+  background-image: url('../img/happypeople.jpg')
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.about-counter-bar
+  background-color: $red
+  color: $white
+
+.counter-items-container
+  padding: rem-calc(20) 0
+
+.counter-item
+  text-align: center
+  text-transform: capitalize
+  font-weight: 700
+  font-size: 1rem
+
+  @include breakpoint(medium)
+    font-size: rem-calc(22)
+
+  &:nth-child(3), &:nth-child(4)
+    padding-top: rem-calc(35)
+
+    @include breakpoint(small)
+      @include breakpoint(landscape)
+        padding-top: 0
+
+    @include breakpoint(medium)
+      padding-top: 0
+
+  span
+    display: block
+
+  .counter-icon
+    .fas
+      font-size: rem-calc(48)
+
+      @include breakpoint(medium)
+        font-size: rem-calc(50)
+
+  .counter-number, .counter-text
+    padding-top: rem-calc(5)
+
+  .counter-number
+    letter-spacing: 1px

@@ -52,8 +52,7 @@
               <div class="mobile-menu-overlay transition-duration-300ms" id="mobile-menu-overlay" data-toggler data-animate="hinge-in-from-top hinge-out-from-top">
                 <ul class="primary-mobile-menu">
                   <li><a href="./fastpoints.php">fast points</a></li>
-                  <li><a href="./foodanddrinks.php">fresh food</a></li>
-                  <li><a href="./foodanddrinks.php">coffee &amp; drinks</a></li>
+                  <li><a href="./foodanddrinks.php">food &amp; drinks</a></li>
                   <li><a href="#">locations</a></li>
                 </ul>
                 <ul class="secondary-mobile-menu">
@@ -70,8 +69,7 @@
             <nav class="primary-menu">
               <ul class="menu">
                 <li><a href="./fastpoints.php">fast points</a></li>
-                <li><a href="./foodanddrinks.php">fresh food</a></li>
-                <li><a href="./foodanddrinks.php">coffee &amp; drinks</a></li>
+                <li><a href="./foodanddrinks.php">food &amp; drinks</a></li>
                 <li><a href="#">locations</a></li>
               </ul>
             </nav>

@@ -15,8 +15,8 @@
   </div>
 
   <div class="stacked-wrapper inner-row food animated fadeIn" data-equalizer>
-    <div class="stack-media large-order-2" data-equalizer-watch>
-      <img src="img/breakfast.jpg" alt="">
+    <div class="stack-media large-order-2 breakfast-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
+      <!-- <img src="img/breakfast.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-1" data-equalizer-watch>
       <div class="stack-title">
@@ -32,8 +32,8 @@
       </ul>
     </div>
 
-    <div class="stack-media large-order-3" data-equalizer-watch>
-      <img src="img/breakfast.jpg" alt="">
+    <div class="stack-media large-order-3 breakfast-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
+      <!-- <img src="img/breakfast.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
       <div class="stack-title">
@@ -51,8 +51,8 @@
   </div>
 
   <div class="stacked-wrapper inner-row drinks animated fadeIn" data-equalizer>
-    <div class="stack-media large-order-2" data-equalizer-watch>
-      <img src="img/coffee.jpg" alt="">
+    <div class="stack-media large-order-2 coffee-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
+      <!-- <img src="img/coffee.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-1" data-equalizer-watch>
       <div class="stack-title">
@@ -69,8 +69,8 @@
       </ul>
     </div>
 
-    <div class="stack-media large-order-3" data-equalizer-watch>
-      <img src="img/coffee.jpg" alt="">
+    <div class="stack-media large-order-3 coffee-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
+      <!-- <img src="img/coffee.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
       <div class="stack-title">

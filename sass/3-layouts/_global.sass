@@ -141,6 +141,9 @@ footer
   @include breakpoint(medium)
     @include xy-cell(auto)
 
+.image-nav-block
+  @extend .cell
+
 /* Animations */
 .animation-delay-500ms
   animation-delay: 500ms !important
@@ -159,6 +162,7 @@ h1, h2, h3, h4, h5, h6
 
 /* Text Effects and Box Shadows */
 $global-box-shadow: 0 1px 5px rgba(0,0,0,0.3)
+$global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
 
 .standard-shadow
   text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
@@ -282,7 +286,9 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 
 /* Headers and Heroes */
 .page-hero
-  background: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url('../img/checkout.jpg') center center no-repeat
+  background: $black-overlay-gradient, url('../img/checkout.jpg')
+  background-position: center center
+  background-repeat: no-repeat
   background-size: cover
   display: flex
   align-items: center
@@ -300,7 +306,20 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 
   p.subheader
     color: $white
+    font-size: 1rem
+    text-shadow: $global-text-shadow
+    font-weight: 600
 
+    @include breakpoint(small)
+      @include breakpoint(landscape)
+        font-size: rem-calc(18)
+
+    @include breakpoint(medium)
+      font-size: rem-calc(28)
+
+    @include breakpoint(medium)
+      @include breakpoint(landscape)
+        font-size: rem-calc(22)
 
   .button
     margin-top: 15px
@@ -351,3 +370,62 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 
 .widget-title
   font-size: rem-calc(18)
+
+
+/* Tabs */
+.filter-tabs
+  padding: rem-calc(60) 0
+
+
+/* Image Nav Blocks */
+.image-nav-block
+  margin: rem-calc(5) 0
+  padding: 0 0.5rem
+  display: block
+
+  @include breakpoint(medium)
+    margin: rem-calc(15) 0
+    padding: 0 1rem
+
+.nav-block-overlay
+  position: relative
+  overflow: hidden
+
+  img
+    transition: transform .2s
+    max-width: 100%
+
+  &::after
+    content: "\A"
+    background: $black-overlay-gradient
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+  &:hover, &:focus
+    &::after
+      background: rgba($red, 0.7)
+
+    img
+      transform: scale(1.1)
+
+.title-overlay
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  color: $white
+  font-weight: 700
+  font-size: 1rem
+  text-transform: uppercase
+  text-shadow: $global-text-shadow
+  z-index: 999
+
+  @include breakpoint(medium)
+    font-size: 2rem
+
+  a
+    color: inherit

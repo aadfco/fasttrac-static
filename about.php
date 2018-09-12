@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<section class="about-tabs inner-row align-center">
+<section class="filter-tabs inner-row align-center">
   <div class="container">
     <div class="inner-row align-center">
       <ul class="tabs" data-tabs id="example-tabs">

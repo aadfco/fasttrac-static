@@ -5,6 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Trac Convenience Store | Gas Station Convenience Store Serving Ohio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#e31b23">
+    <meta name="apple-mobile-web-app-title" content="Fast Trac">
+    <meta name="application-name" content="Fast Trac">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#373737">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
   </head>
@@ -25,7 +34,7 @@
                 <li><a href="./about.php">about us</a></li>
                 <li><a href="./news.php">news</a></li>
                 <li><a href="#">community</a></li>
-                <li><a href="#">careers</a></li>
+                <li><a href="./careers.php">careers</a></li>
                 <li><a href="./contact.php">contact</a></li>
               </ul>
             </nav>
@@ -59,7 +68,7 @@
                   <li><a href="./about.php">about us</a></li>
                   <li><a href="./news.php">news</a></li>
                   <li><a href="#">community</a></li>
-                  <li><a href="#">careers</a></li>
+                  <li><a href="./careers.php">careers</a></li>
                   <li><a href="./contact.php">contact</a></li>
                 </ul>
               </div>

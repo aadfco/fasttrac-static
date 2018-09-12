@@ -90,22 +90,30 @@
   background-image: url("../img/arches.png")
   padding-bottom: 60px
 
-  @include breakpoint(medium down)
-    h1
-      font-size: 3rem
+  h1
+    font-size: rem-calc(48)
+
+    @include breakpoint(medium)
+      font-size: rem-calc(60)
 
   h2, p
     color: $white
 
   h2
-    text-align: center
-    font-size: 1.125rem
+    text-align: justify
+    font-size: rem-calc(22)
 
-    @include breakpoint(small only)
-      text-align: left
+    @include breakpoint(medium)
+      text-align: center
+      font-size: rem-calc(28)
 
   p
     text-align: justify
+    font-size: rem-calc(20)
+    padding: 0
+
+    @include breakpoint(medium)
+      padding: 0 5%
 
 .earn-steps
   margin-top: 60px
@@ -257,11 +265,12 @@
 
   p
     font-weight: 700
-    font-size: rem-calc(22)
+    font-size: rem-calc(20)
+    text-align: justify
 
-    @include breakpoint(medium down)
-      font-size: 1.2rem
-      text-align: justify
+    @include breakpoint(medium)
+      font-size: rem-calc(20)
+      text-align: center
 
   .store-locator-form
     padding: 60px 0 30px
@@ -270,6 +279,7 @@
       color: $white
       text-align: center
       font-weight: 700
+      font-size: rem-calc(14)
 
     input
       text-align: center
@@ -285,21 +295,39 @@
   background: $yellow url("../img/wavecut.png")
 
   .section-title
-    text-align: left
+    text-align: center
+
+    @include breakpoint(medium)
+      text-align: left
 
   .section-content
     p
       padding-bottom: 30px
+      padding-right: 0
+      font-size: rem-calc(20)
+
+      @include breakpoint(medium)
+        padding-right: 50%
+
+.careers-home
+  .button
+    display: block
+
+    @include breakpoint(medium)
+      display: inline-block
+
+
 
 .employee-cutout
   position: absolute
   bottom: 0
   right: 0
+  display: none
 
-  @include breakpoint(medium down)
-    display: none
+  @include breakpoint(medium)
+    display: block
 
   img
     display: block
-    max-width: 200px
+    max-width: 185px
     margin: 0 auto

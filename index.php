@@ -46,8 +46,8 @@
           </div>
           <div class="inner-row align-center">
             <figure class="section-content wow animated fadeIn animation-delay-300ms">
-              <h2 class="standard-shadow">Earn Points Faster with Every Swipe!</h2>
-              <p>Earn 50 points per dollar by using your card for purchases at Speedway, in addition to the loyalty points you may earn today, and 10 points everywhere else when you use your card.</p>
+              <h2>Earn points with every purchase!</h2>
+              <p>When you make a purchase at Fast Trac, you instantly earn rewards right at checkout! Gone are the days of having to manage what rewards you receive. It's as simple as purchasing a drink and instantly receiving a discount on your purchase. </p>
             </figure>
           </div>
           <div class="inner-row earn-steps align-center wow animted lightSpeedIn animation-delay-300ms">
@@ -61,7 +61,7 @@
 
 
             <div class="rewards-steps-circle">
-              <div class="circle-content ">
+              <div class="circle-content">
                 <i class="fas fa-credit-card"></i>
                 <span>Use</span>
               </div>
@@ -69,7 +69,7 @@
 
 
             <div class="rewards-steps-circle">
-              <div class="circle-content ">
+              <div class="circle-content">
                 <i class="fas fa-list"></i>
                 <span>Track</span>
               </div>
@@ -77,7 +77,7 @@
 
 
             <div class="rewards-steps-circle">
-              <div class="circle-content ">
+              <div class="circle-content">
                 <i class="fas fa-hand-holding-usd"></i>
                 <span>Earn</span>
               </div>

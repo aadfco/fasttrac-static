@@ -61,10 +61,7 @@ footer
     @include xy-cell(12%)
 
 .section-content
-  @include breakpoint(small)
-    @include xy-cell(12)
-  @include breakpoint(large)
-    @include xy-cell(6)
+  @include xy-cell(12)
 
 .two-col-section-content
   @include xy-cell(6)
@@ -75,7 +72,7 @@ footer
 .store-locator-form
   @include xy-cell(12)
   @include breakpoint(large)
-    @include xy-cell(3)
+    @include xy-cell(4)
 
 .faq-accordion
   @include xy-cell(12)
@@ -299,8 +296,6 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   margin: 0 auto
   padding: 0 15%
 
-
-
   h1
     color: $white
 
@@ -366,7 +361,7 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
       font-size: 3rem
 
 .section-content
-  padding-top: rem-calc(60)
+  padding-top: rem-calc(30)
 
 .widget-title
   font-size: rem-calc(18)

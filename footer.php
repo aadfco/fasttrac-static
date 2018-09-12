@@ -3,7 +3,7 @@
       <div class="container">
         <div class="inner-row">
           <div class="footer-widget-cell">
-            <h5 class="standard-shadow">fast points</h5>
+            <h5>fast points</h5>
             <ul class="footer-widget-links">
               <li><a href="">redeem points</a></li>
               <li><a href="">earn points</a></li>
@@ -12,7 +12,7 @@
             </ul>
           </div>
           <div class="footer-widget-cell">
-            <h5 class="standard-shadow">locations</h5>
+            <h5>locations</h5>
             <ul class="footer-widget-links">
               <li><a href="">location search</a></li>
               <li><a href="">fuel safety</a></li>
@@ -21,7 +21,7 @@
             </ul>
           </div>
           <div class="footer-widget-cell">
-            <h5 class="standard-shadow">about</h5>
+            <h5>about</h5>
             <ul class="footer-widget-links">
               <li><a href="">about fast Trac</a></li>
               <li><a href="">FAQ</a></li>
@@ -30,7 +30,7 @@
             </ul>
           </div>
           <div class="footer-widget-cell">
-            <h5 class="standard-shadow">legal</h5>
+            <h5>legal</h5>
             <ul class="footer-widget-links">
               <li><a href="">privacy policy</a></li>
               <li><a href="">terms &amp; conditions</a></li>

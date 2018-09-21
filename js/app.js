@@ -13,7 +13,6 @@ $(document).foundation().ready( function(){
   	})
 	wow.init();
 
-
 // Enable sticky tab nav on Food and Drinks Page
   var   fadCheck = window.location.href.indexOf('foodanddrinks.php');
         tabnav = $(".tab-nav-group");
@@ -22,8 +21,8 @@ $(document).foundation().ready( function(){
         stackedwrapper = $(".stacked-wrapper").height();
         footer = $('footer').height();
 
-  window.onload = function() {
-    if (fadCheck > -1) {
+  // window.onload = function() {
+  //   if (fadCheck > -1) {
 
     $(window).scroll( function() {
       if( $(this).scrollTop() > pagehero ) {
@@ -32,9 +31,9 @@ $(document).foundation().ready( function(){
       else {
         tabnav.removeClass(tabnavScroll);
       }
-    });
-  }
-} //end Food and Drinks
+    })
+  // }
+// } //end Food and Drinks
 
   	//Hide Drinks on page load
   	$(".drinks").hide();

@@ -14,42 +14,35 @@ $(document).foundation().ready( function(){
 	wow.init();
 
 // Enable sticky tab nav on Food and Drinks Page
-  var   fadCheck = window.location.href.indexOf('foodanddrinks.php');
-        tabnav = $(".tab-nav-group");
-        tabnavScroll = "tab-nav-scroll";
-        pagehero = $(".page-hero").height();
-        stackedwrapper = $(".stacked-wrapper").height();
-        footer = $('footer').height();
+  var fadCheck = window.location.href.indexOf('foodanddrinks.php');
+  var tabnav = $(".tab-nav-group");
+  var tabnavScroll = "tab-nav-scroll";
+  var pagehero = $(".page-hero").height();
 
-  // window.onload = function() {
-  //   if (fadCheck > -1) {
+  $(window).scroll( function() {
+    if( $(this).scrollTop() > pagehero ) {
+      tabnav.addClass(tabnavScroll);
+    }
+    else {
+      tabnav.removeClass(tabnavScroll);
+    }
+  });
 
-    $(window).scroll( function() {
-      if( $(this).scrollTop() > pagehero ) {
-        tabnav.addClass(tabnavScroll);
-      }
-      else {
-        tabnav.removeClass(tabnavScroll);
-      }
-    })
-  // }
-// } //end Food and Drinks
+	//Hide Drinks on page load
+	$(".drinks").hide();
 
-  	//Hide Drinks on page load
-  	$(".drinks").hide();
+	// shows and hides filtered items
+	$(".filter-simple-button").click(function() {
+	  var value = $(this).attr('data-filter');
+	    $(".stacked-wrapper").not('.'+value).hide();
+	    $('.stacked-wrapper').filter('.'+value).show();
+	});
 
-  	// shows and hides filtered items
-  	$(".filter-simple-button").click(function() {
-  	  var value = $(this).attr('data-filter');
-  	    $(".stacked-wrapper").not('.'+value).hide();
-  	    $('.stacked-wrapper').filter('.'+value).show();
-  	});
-
-  	// changes active class on filter buttons
-  	$('.filter-simple-button').click(function () {
-  	  $(this).siblings().removeClass('is-active');
-  	  $(this).addClass('is-active');
-  	});
+	// changes active class on filter buttons
+	$('.filter-simple-button').click(function () {
+	  $(this).siblings().removeClass('is-active');
+	  $(this).addClass('is-active');
+	});
 
 
   // Animated Number Counter

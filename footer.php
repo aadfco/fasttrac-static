@@ -58,6 +58,20 @@
     </div>
   </footer>
 
+  <div class="fast-points-reminder">
+    <div class="inner-row reminder-window align-middle">
+      <div class="cell small-4">
+        <img src="./img/turtle.svg" alt="">
+      </div>
+      <div class="cell small-8 reminder-message">
+        <h1>Did you forget to sign up for Fast Points?</h1>
+        <p>Earn instant rewards with each purchase at checkout!</p>
+        <a href="#" class="button">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/what-input.min.js"></script>

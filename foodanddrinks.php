@@ -22,50 +22,54 @@
       <div class="stack-title">
         <h1>Breakfast</h1>
       </div>
-      <div class="stack-sub-title">
-        <h2>biscuits &amp; croissants</h2>
-      </div>
       <ul class="stack-items">
-        <li>bacon, egg &amp; cheese</li>
-        <li>sausage, egg, &amp; cheese</li>
-        <li>ham, egg, &amp; cheese</li>
+        <li>breakfast sandwiches</li>
+        <li>breakfast burritos</li>
+        <li>donuts</li>
+        <li>pastries</li>
       </ul>
     </div>
 
-    <div class="stack-media large-order-3 breakfast-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
+    <div class="stack-media large-order-3 lunch-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
       <!-- <img src="img/breakfast.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
       <div class="stack-title">
-        <h1>Breakfast</h1>
-      </div>
-      <div class="stack-sub-title">
-        <h2>biscuits &amp; croissants</h2>
+        <h1>Lunch</h1>
       </div>
       <ul class="stack-items">
-        <li>bacon, egg &amp; cheese</li>
-        <li>sausage, egg, &amp; cheese</li>
-        <li>ham, egg, &amp; cheese</li>
+        <li>hot sandwiches</li>
+        <li>deli sandwiches</li>
+        <li>wraps</li>
+        <li>hot dogs</li>
+        <li>cheesy sausage links</li>
+        <li>tornado's</li>
+        <li>nachos, cheese, &amp; chilli</li>
       </ul>
     </div>
   </div>
 
   <div class="stacked-wrapper inner-row drinks animated fadeIn" data-equalizer>
-    <div class="stack-media large-order-2 coffee-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
+    <div class="stack-media large-order-2 soda-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
       <!-- <img src="img/coffee.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-1" data-equalizer-watch>
       <div class="stack-title">
         <h1>cold drinks</h1>
       </div>
-      <div class="stack-sub-title">
-        <h2>sodas</h2>
-      </div>
       <ul class="stack-items">
         <li>coke</li>
+        <li>diet coke</li>
+        <li>cherry coke</li>
         <li>sprite</li>
-        <li>ginger ale</li>
-        <li>slushes</li>
+        <li>fanta</li>
+        <li>hi-c</li>
+        <li>Pepsi</li>
+        <li>diet Pepsi</li>
+        <li>Mountain Dew</li>
+        <li>sierra mist</li>
+        <li>dr. pepper</li>
+        <li>slushies</li>
       </ul>
     </div>
 
@@ -74,16 +78,12 @@
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
       <div class="stack-title">
-        <h1>hot drinks</h1>
-      </div>
-      <div class="stack-sub-title">
-        <h2>coffee</h2>
+        <h1>Hot and Cold Brew</h1>
       </div>
       <ul class="stack-items">
-        <li>house blend</li>
-        <li>dark roast</li>
-        <li>decaf</li>
-        <li>espresso</li>
+        <li>Coffee</li>
+        <li>Iced Coffee</li>
+        <li>Cappuccino</li>
       </ul>
     </div>
   </div>

@@ -1,11 +1,11 @@
 <?php include('header.php') ?>
 
 <div class="page-hero food-and-drinks">
-  <div class="page-hero-content">
+  <!-- <div class="page-hero-content">
     <h1 class="standard-shadow">earn rewards immediately at checkout!</h1>
     <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
     <a href="#" class="button">learn more</a>
-  </div>
+  </div> -->
 </div>
 
 <section class="filter-simple">

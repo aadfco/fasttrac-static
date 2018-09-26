@@ -70,7 +70,7 @@ footer
   @include xy-cell(3)
 
 .fad-promo-banner
-  @include xy-cell(12)
+  @include xy-cell(12, true, 0)
   @include breakpoint(medium)
     @include xy-cell(6, true, 0)
 
@@ -349,14 +349,13 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
 .stack-media
   overflow: hidden
-  min-height: 450px
+  min-height: 320px
   background-position: center center
   background-repeat: no-repeat
   background-size: cover
-  //
-  // img
-  //   max-width: none
-  //   height: 100%
+
+  @include breakpoint(medium)
+    min-height: 450px
 
 
 /* Page and Post Content */

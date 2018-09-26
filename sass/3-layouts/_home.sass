@@ -1,3 +1,4 @@
+/* Image Slider */
 .fullscreen-image-slider
   .orbit-image
     width: 100%
@@ -85,10 +86,12 @@
   @include breakpoint (medium down)
     left: 45%
 
+
+/* Fast Points Rewards */
 .fast-points-home
   background-color: $red
   background-image: url("../img/arches.png")
-  padding-bottom: 60px
+  padding-bottom: rem-calc(60)
 
   h1
     font-size: rem-calc(48)
@@ -251,11 +254,47 @@
       margin: 30px 3px
       padding: 1rem 2.5rem
 
+
+/* Food and Drinks */
+.fad-home
+  background-color: $medium-black
+  background-image: url("../img/zig-zag.png")
+  width: 100%
+  padding-bottom: rem-calc(60)
+
+  h2, p
+    color: $white
+
+  h2
+    text-align: justify
+    font-size: rem-calc(22)
+
+    @include breakpoint(medium)
+      text-align: center
+      font-size: rem-calc(28)
+
+.promo-banner-row
+  padding-top: rem-calc(30)
+  padding-bottom: rem-calc(30)
+
+.fad-promo-banner-left, .fad-promo-banner-right
+  background-size: cover
+  background-repeat: no-repeat
+  width: 50%
+  height: 320px
+
+.fad-promo-banner-left
+  background-image: url("../img/fasttrac-fb-promo.jpg")
+
+.fad-promo-banner-right
+  background-image: url("../img/fasttrac-fb-promo.jpg")
+
+/* Store Locator */
 .store-locator-home
   background-image: url("../img/fasttrac-nighttime.jpg")
   background-repeat: no-repeat
   background-size: cover
-  padding-bottom: 60px
+  padding-bottom: rem-calc(60)
 
   h2,p
     color: $white
@@ -289,9 +328,11 @@
     padding: 1rem 5rem
     margin-top: 30px
 
+
+/* Careers */
 .careers-home
   position: relative
-  padding-bottom: 60px
+  padding-bottom: rem-calc(60)
   background: $yellow url("../img/wavecut.png")
 
   .section-title

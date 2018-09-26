@@ -69,6 +69,11 @@ footer
 .circle-bg
   @include xy-cell(3)
 
+.fad-promo-banner
+  @include xy-cell(12)
+  @include breakpoint(medium)
+    @include xy-cell(6, true, 0)
+
 .store-locator-form
   @include xy-cell(12)
   @include breakpoint(large)
@@ -155,7 +160,7 @@ footer
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   letter-spacing: 1px
-  font-weight: 800
+  font-weight: 900
 
 /* Text Effects and Box Shadows */
 $global-box-shadow: 0 1px 5px rgba(0,0,0,0.3)
@@ -200,7 +205,7 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
 .button
   font-size: 1rem
   text-transform: uppercase
-  font-weight: 800
+  font-weight: 900
   border-bottom: 5px solid darken($red, 15%)
   text-shadow: 0 2px darken($red, 15%)
   transition: all 0.1s
@@ -279,7 +284,7 @@ $servquick-bottom-gradient: linear-gradient(to bottom, #29323c, #485563)
 $servquick-left-gradient: linear-gradient(to left, #29323c, #485563)
 $fasttrac-gradient: linear-gradient(180deg, rgb(227, 27, 35), rgb(255, 196, 37))
 $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
-
+$sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
 /* Headers and Heroes */
 .page-hero
@@ -303,7 +308,7 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
     color: $white
     font-size: 1rem
     text-shadow: $global-text-shadow
-    font-weight: 600
+    font-weight: 700
 
     @include breakpoint(small)
       @include breakpoint(landscape)
@@ -413,7 +418,6 @@ $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
   transform: translate(-50%, -50%)
   text-align: center
   color: $white
-  font-weight: 700
   font-size: 1rem
   text-transform: uppercase
   text-shadow: $global-text-shadow

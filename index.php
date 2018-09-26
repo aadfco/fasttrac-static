@@ -118,7 +118,7 @@
             </figure>
           </div>
         </div>
-        <div class="inner-row promo-banner-row">
+        <div class="inner-row promo-banner-row wow animated fadeIn animation-delay-300ms">
           <div class="fad-promo-banner">
             <img src="./img/fasttrac-fb-promo.jpg" alt="">
           </div>

@@ -58,7 +58,10 @@
     </div>
   </footer>
 
-  <div class="fast-points-reminder">
+  <div class="fast-points-reminder" data-closable>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
     <div class="inner-row reminder-window align-middle">
       <div class="cell small-4">
         <img src="./img/turtle.svg" alt="">
@@ -78,6 +81,5 @@
 <script src="js/foundation.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
-<!-- <script src="js/functions.js"></script> -->
 </body>
 </html>

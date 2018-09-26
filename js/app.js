@@ -13,36 +13,65 @@ $(document).foundation().ready( function(){
   	})
 	wow.init();
 
-// Enable sticky tab nav on Food and Drinks Page
-  var fadCheck = window.location.href.indexOf('foodanddrinks.php');
-  var tabnav = $(".tab-nav-group");
-  var tabnavScroll = "tab-nav-scroll";
-  var pagehero = $(".page-hero").height();
+  // Fast Points Reminder Popup
+    var fpr = $('.fast-points-reminder');
+    var fprShow = "fpr-show";
 
-  $(window).scroll( function() {
-    if( $(this).scrollTop() > pagehero ) {
-      tabnav.addClass(tabnavScroll);
+    function fpRemind() {
+      fpr.addClass(fprShow);
     }
-    else {
-      tabnav.removeClass(tabnavScroll);
+
+    var homeCheck = $(".store-locator-home").length;
+
+    if (homeCheck) {
+      function fprScroll() {
+        var slHome = $('.store-locator-home');
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var slTop = $(slHome).offset().top;
+        var slBottom = slTop + $(slHome).height();
+
+        if ((slBottom <= docViewBottom) && (slTop >= docViewTop)) {
+          fpRemind();
+        }
+      }
+    window.addEventListener('scroll',fprScroll);
     }
+
+
+  // Enable sticky tab nav on Food and Drinks Page
+    var tabnav = $('.tab-nav-group');
+    var tabnavScroll = "tab-nav-scroll";
+
+    $(window).scroll( function() {
+      var pagehero = $(".page-hero").height();
+
+      if( $(this).scrollTop() > pagehero ) {
+        tabnav.addClass(tabnavScroll);
+      }
+      else {
+        tabnav.removeClass(tabnavScroll);
+      }
+    });
+
+
+  //Hide Drinks on page load
+  $(".drinks").hide();
+
+
+  // shows and hides filtered items
+  $(".filter-simple-button").click(function() {
+    var value = $(this).attr('data-filter');
+      $(".stacked-wrapper").not('.'+value).hide();
+      $('.stacked-wrapper').filter('.'+value).show();
   });
 
-	//Hide Drinks on page load
-	$(".drinks").hide();
 
-	// shows and hides filtered items
-	$(".filter-simple-button").click(function() {
-	  var value = $(this).attr('data-filter');
-	    $(".stacked-wrapper").not('.'+value).hide();
-	    $('.stacked-wrapper').filter('.'+value).show();
-	});
-
-	// changes active class on filter buttons
-	$('.filter-simple-button').click(function () {
-	  $(this).siblings().removeClass('is-active');
-	  $(this).addClass('is-active');
-	});
+  // changes active class on filter buttons
+  $('.filter-simple-button').click(function () {
+    $(this).siblings().removeClass('is-active');
+    $(this).addClass('is-active');
+  });
 
 
   // Animated Number Counter

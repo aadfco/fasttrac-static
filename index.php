@@ -1,6 +1,7 @@
 <?php include('header.php'); ?>
 
-      <div class="fullscreen-image-slider">
+<!-- Begin Image Slider -->
+      <div class="fullscreen-image-slider animated fadeIn">
         <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
           <ul class="orbit-container orbit-wrapper">
             <button class="orbit-previous">
@@ -37,6 +38,7 @@
         </div>
       </div> <!-- end FullScreen Image Slider -->
 
+<!-- Fast Points -->
       <section class="fast-points-home">
         <div class="container">
           <div class="inner-row">
@@ -46,7 +48,7 @@
           </div>
           <div class="inner-row align-center">
             <figure class="section-content wow animated fadeIn animation-delay-300ms">
-              <h2>Earn points with every purchase!</h2>
+              <h2 class="standard-shadow">Earn points with every purchase!</h2>
               <p>When you make a purchase at Fast Trac, you instantly earn rewards right at checkout! Gone are the days of having to manage what rewards you receive. It's as simple as purchasing a drink and instantly receiving a discount on your purchase. </p>
             </figure>
           </div>
@@ -104,6 +106,32 @@
         </div>
       </section> <!-- end Fast Points Home -->
 
+<!-- Begin Food and Drinks -->
+      <section class="fad-home">
+        <div class="container">
+          <div class="inner-row">
+            <div class="section-title">
+              <h1 class="superhero wow animated bounceIn animation-delay-300ms">Food and Drinks</h1>
+            </div>
+            <figure class="section-content wow animated fadeIn animation-delay-300ms">
+              <h2 class="standard-shadow">check out our latest deals!</h2>
+            </figure>
+          </div>
+        </div>
+        <div class="inner-row promo-banner-row">
+          <div class="fad-promo-banner">
+            <img src="./img/fasttrac-fb-promo.jpg" alt="">
+          </div>
+          <div class="fad-promo-banner">
+            <img src="./img/fasttrac-fb-promo-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="inner-row align-center wow animated fadeIn animation-delay-300ms">
+          <a href="./foodanddrinks.php" class="button">see all offers</a>
+        </div>
+      </section>
+
+<!-- Begin Store Locator -->
       <section class="store-locator-home">
         <div class="container">
           <div class="inner-row align-center">
@@ -130,8 +158,8 @@
         </div>
       </section>
 
+<!-- Begin Careers -->
       <section class="careers-home">
-
         <div class="container">
           <div class="inner-row">
             <div class="section-title">
@@ -141,7 +169,7 @@
           <div class="inner-row">
             <div class="section-content small-order-2 medium-order-1 wow animated slideInLeft animation-delay-300ms">
               <p>Many of our long-term, seasoned employees began their careers right here. From your first day, you’ll discover why so many have chosen to build their career at Fast Trac.</p>
-              <a href="#" class="button">browse careers</a>
+              <a href="./careers.php" class="button">browse careers</a>
             </div>
             <div class="employee-cutout small-order-1 medium-order-2 wow animated slideInRight animation-delay-300ms">
               <img src="img/employee-cut.png" alt="">

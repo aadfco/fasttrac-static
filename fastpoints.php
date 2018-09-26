@@ -72,41 +72,56 @@
 
       <div class="inner-row align-center">
         <div class="faq-accordion">
-          <ul class="accordion" data-accordion data-allow-all-closed="true">
+          <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
             <li class="accordion-item is-active" data-accordion-item>
-              <a href="#panel1" class="accordion-title"><h6>Is there a minimum purchase amount necessary to earn points?</h6></a>
+              <a href="#panel1" class="accordion-title"><h6>How do I participate?</h6></a>
               <div class="accordion-content" id="panel1" data-tab-content>
-                Suspendisse mauris justo, mattis at turpis ut, vestibulum ullamcorper libero.
+                Ask the cashier for a card and start earning awards immediately. You must enroll and register card to redeem your awards.
               </div>
             </li>
 
             <li class="accordion-item" data-accordion-item>
-              <a href="#panel2" class="accordion-title"><h6>How long does it take after purchase to receive points?</h6></a>
+              <a href="#panel2" class="accordion-title"><h6>How do I enroll and register my card?</h6></a>
               <div class="accordion-content" id="panel2" data-tab-content>
-                Suspendisse mauris justo, mattis at turpis ut, vestibulum ullamcorper libero.
+                You may enroll and register your card by calling the number on the back of the card or go to the website on the back of the card.
               </div>
             </li>
 
             <li class="accordion-item" data-accordion-item>
-              <a href="#panel3" class="accordion-title"><h6>Am I limited to a certain gallon amount when receiving discounts at the pump?</h6></a>
+              <a href="#panel3" class="accordion-title"><h6>How does the program work?</h6></a>
               <div class="accordion-content" id="panel3" data-tab-content>
-                Suspendisse mauris justo, mattis at turpis ut, vestibulum ullamcorper libero.
+                Each program is different; the program director needs to fill this area in.
               </div>
             </li>
 
             <li class="accordion-item" data-accordion-item>
-              <a href="#panel4" class="accordion-title"><h6>Do my points expire?</h6></a>
+              <a href="#panel4" class="accordion-title"><h6>Do I have to have my card to get my award?</h6></a>
               <div class="accordion-content" id="panel4" data-tab-content>
-                Suspendisse mauris justo, mattis at turpis ut, vestibulum ullamcorper libero.
+                No. You may use your 10 digit phone number as an alternate ID.
               </div>
             </li>
 
             <li class="accordion-item" data-accordion-item>
-              <a href="#panel5" class="accordion-title"><h6>I lost my card. How do I get a new one?</h6></a>
+              <a href="#panel5" class="accordion-title"><h6>What happens if I lose my card?</h6></a>
               <div class="accordion-content" id="panel5" data-tab-content>
-                Suspendisse mauris justo, mattis at turpis ut, vestibulum ullamcorper libero.
+                Get a new card at a participating location; call the number on the back of the card. If the card was not registered and you do not know the 16-digit number, you will lose any award or balance status. If you card was registered or you knew the 16 digit number your information will transfer to the new card.
               </div>
             </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#panel5" class="accordion-title"><h6>What happens if my card does not work?</h6></a>
+              <div class="accordion-content" id="panel5" data-tab-content>
+                Call the number on the back of the card and explain what happened to the customer service agent.
+              </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#panel5" class="accordion-title"><h6>Can more than one card be combined with other family members to earn awards together?</h6></a>
+              <div class="accordion-content" id="panel5" data-tab-content>
+                Yes. Call the number on the back of the card and explain to the customer service agent you want to combine cards.
+              </div>
+            </li>
+
 
           </ul>
         </div>

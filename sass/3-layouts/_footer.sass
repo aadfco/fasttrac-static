@@ -65,23 +65,29 @@
   background-size: cover
   position: fixed
   z-index: 10000
-  right: 2px
+  right: 20px
   top: auto
-  bottom: 40px
+  bottom: 70px
   transform: none
   width: 475px
   border: 2px solid $dark-gray
   border-radius: $global-radius
   box-shadow: $global-box-shadow
-  display: none
+  visibility: hidden
+  opacity: 0
+  transition: opacity 300ms 2s, visibility 300ms ease-in 2s
+
+  .close-button
+    top: 0
 
 .fpr-show
-  display: block
+  visibility: visible
+  opacity: 1
 
 .reminder-window
-  text-align: justify
+  text-align: left
   color: $white
-  padding: 0 15px
+  padding: 0 rem-calc(15)
 
   img
     width: 125px
@@ -97,4 +103,4 @@
     display: block
 
 .reminder-message
-  margin-top: 20px
+  padding-top: rem-calc(30)

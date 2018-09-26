@@ -5,10 +5,10 @@
     <div class="hero-post-info">
       <div class="date-info">August 22, 2018</div>
       <div class="category-info">
-        <span>|</span>In <a href="#">Community</a>
+        <span>|</span> In <a href="#">Community</a>
       </div>
       <div class="author-info">
-        <span>|</span>By <a href="#">Katie Bland</a>
+        <span>|</span> By <a href="#">Katie Bland</a>
       </div>
     </div>
   </div>

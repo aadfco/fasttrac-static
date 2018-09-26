@@ -46,7 +46,7 @@
       <div class="main-nav">
         <div class="container">
           <div class="inner-row align-justify align-middle">
-            <div class="logo">
+            <div class="logo animated fadeInLeftBig slow">
               <a href="/fasttrac-static"><img src="img/fasttrac-logo-2.svg" alt="Fast Trac Convenience Store" align="left"></a>
             </div>
 
@@ -75,7 +75,7 @@
             </nav>
 
             <!-- Begin Desktop Navigation Menus -->
-            <nav class="primary-menu">
+            <nav class="primary-menu animated fadeInRightBig slow">
               <ul class="menu">
                 <li><a href="./fastpoints.php">fast points</a></li>
                 <li><a href="./foodanddrinks.php">food &amp; drinks</a></li>
@@ -83,7 +83,7 @@
               </ul>
             </nav>
 
-            <div class="fp-login">
+            <div class="fp-login animated fadeInRightBig slow">
               <div class="fp-logo">
                 <a href="#">
                   <img src="img/fastpoints-v2.svg" alt="Fast Trac Fast Points Login | Sign up">

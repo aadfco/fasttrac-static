@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="page-hero contact">
-  <div class="page-hero-content">
+  <div class="page-hero-content centered">
     <h1 class="standard-shadow">contact us</h1>
   </div>
 </div>

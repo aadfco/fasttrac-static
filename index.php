@@ -43,7 +43,7 @@
         <div class="container">
           <div class="inner-row">
             <div class="section-title">
-              <h1 class="superhero wow animated bounceIn animation-delay-300ms">Fast Trac Rewards</h1>
+              <h1 class="superhero wow animated bounceIn animation-delay-300ms">Fast Points Rewards</h1>
             </div>
           </div>
           <div class="inner-row align-center">
@@ -178,6 +178,21 @@
         </div>
       </section>
 
+      <div class="fast-points-reminder" data-closable>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="inner-row reminder-window align-middle">
+          <div class="cell small-4">
+            <img src="./img/turtle.svg" alt="">
+          </div>
+          <div class="cell small-8 reminder-message">
+            <h1>Did you forget to sign up for Fast Points?</h1>
+            <p>Earn instant rewards with each purchase at checkout!</p>
+            <a href="./fastpoints.php" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
 
 
 <?php include('footer.php'); ?>

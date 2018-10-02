@@ -9,7 +9,6 @@
   text-transform: uppercase
   font-weight: 800
   letter-spacing: 0.5px
-  z-index: 9999
 
 .top-nav
   position: fixed
@@ -20,11 +19,14 @@
   border-bottom: 2px solid $red
   width: 100%
   height: 10px
+  z-index: 9999
 
   a
     color: $white
 
-    &:hover
+    &:hover,
+    &:active,
+    &:focus
       color: $yellow
 
   @include breakpoint(large)
@@ -39,19 +41,49 @@
     justify-content: flex-start
 
 .secondary-menu
-  .menu
+  ul.menu
     justify-content: flex-end
+
+    li
+      position: relative
+      transition-duration: 0.5s
+
+      &:hover > ul,
+      &:focus-within >ul,
+        visibility: visible
+        opacity: 1
+        display: block
+
+      ul
+        background-color: $black
+        border-bottom: 2px solid $red
+        border-left: 2px solid $red
+        border-right: 2px solid $red
+        min-width: 12rem
+        position: absolute
+        left: -5px
+        visibility: hidden
+        display: none
+        opacity: 0
+        list-style: none
+        transition: all 0.5 ease-in-out
+
+        &:hover,
+        &:focus
+          visibility: visible
+          opacity: 1
+          display: block
 
 .main-nav
   position: fixed
   top: 10px
   left: 0
   background-color: $white
-  // background-image: url("../img/ps-neutral.png")
   box-shadow: $global-box-shadow
   font-size: rem-calc(14)
   width: 100%
   height: 70px
+  z-index: 9988
 
   @include breakpoint(large)
     top: 36px
@@ -114,6 +146,33 @@ ul.secondary-mobile-menu
   background-color: $white
   li
     border-bottom: 1px solid $light-gray
+
+    &:hover > ul,
+    &:focus > ul,
+    &:focus-within >ul,
+      visibility: visible
+      opacity: 1
+      display: block
+
+    ul
+      background-color: $black
+      border-bottom: 2px solid $red
+      border-left: 2px solid $red
+      border-right: 2px solid $red
+      min-width: 12rem
+      position: absolute
+      left: -5px
+      visibility: hidden
+      display: none
+      opacity: 0
+      list-style: none
+      transition: all 0.5 ease-in-out
+
+      &:hover,
+      &:focus
+        visibility: visible
+        opacity: 1
+        display: block
 
     &:hover
       background: darken($white, 10%)

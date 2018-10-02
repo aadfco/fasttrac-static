@@ -58,7 +58,7 @@
   background-position: center
 
 .slide-1
-  background-image: url('../img/slides/slide-1@1200px.jpg')
+  background-image: url('../img/slides/fastpoints-card-mockup.jpg')
 
 .slide-2
   background-image: url('../img/slides/slide-2@1200px.jpg')
@@ -372,3 +372,58 @@
     display: block
     max-width: 185px
     margin: 0 auto
+
+
+/* Fast Points Popup */
+.fast-points-reminder
+  height: 250px
+  background-image: url('../img/fasttrac-nighttime.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  position: fixed
+  z-index: 10000
+  right: 0
+  top: auto
+  bottom: 70px
+  transform: none
+  width: 100%
+  border: 2px solid $dark-gray
+  border-radius: $global-radius
+  box-shadow: $global-box-shadow
+  visibility: hidden
+  opacity: 0
+  transition: opacity 200ms 2s, visibility 200ms ease-in-out 1s
+
+  @include breakpoint(medium)
+    width: 475px
+    right: 0
+
+  .close-button
+    top: 0
+
+.fpr-show
+  visibility: visible
+  opacity: 1
+
+.reminder-window
+  text-align: left
+  color: $white
+  padding: 0 rem-calc(15)
+
+  img
+    width: 95px
+    @include breakpoint(medium)
+      width: 125px
+
+  h1
+    font-size: rem-calc(20)
+    text-transform: none
+
+  p
+    font-size: rem-calc(18)
+
+  .button
+    display: block
+
+.reminder-message
+  padding-top: rem-calc(30)

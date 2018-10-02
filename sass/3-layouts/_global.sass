@@ -342,6 +342,12 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
     padding-top: 30px
 
   ul.stack-items
+    column-count: 2
+    column-gap: rem-calc(60)
+    @include breakpoint(medium)
+      column-count: 1
+      column-gap: 0
+      
     li
       text-transform: capitalize
       @include breakpoint(medium)

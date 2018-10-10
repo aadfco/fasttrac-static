@@ -35,7 +35,7 @@ $(document).foundation().ready( function(){
           fpRemind();
         }
       }
-    window.addEventListener('scroll',fprScroll);
+    document.addEventListener('scroll',fprScroll);
     }
 
 

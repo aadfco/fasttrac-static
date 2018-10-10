@@ -12,23 +12,37 @@
               <span class="show-for-sr">Next Slide</span>
               <span class="nav fa fa-chevron-right fa-3x"></span>
             </button>
-            <li class="is-active orbit-slide slide-1">
-              <figcaption class="orbit-caption">
-                <h1>Get Rewarded with Fast Points</h1>
-                <p>With Fast Points, you immediately receive rewards at checkout!</p>
-                <a href="#" class="button">Learn More</a>
-              </figcaption>
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+                <figcaption class="orbit-caption">
+                  <h1>Get Rewarded with Fast Points</h1>
+                  <p>Duis sit amet sapien eleifend, pulvinar odio a, hendrerit diam. Curabitur ac pharetra nulla. Donec justo augue, ornare eget molestie a, rutrum sit amet lectus.</p>
+                  <a href="#" class="button">Learn More</a>
+                </figcaption>
+              </figure>
             </li>
-            <li class="orbit-slide slide-2">
-              <figcaption class="orbit-caption">
-                <h1>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</h1>
-              </figcaption>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+                <figcaption class="orbit-caption">
+                  <h1>Get Rewarded with Fast Points</h1>
+                  <p>With Fast Points, you immediately receive rewards at checkout!</p>
+                  <a href="#" class="button">Learn More</a>
+                </figcaption>
+              </figure>
             </li>
-            <li class="orbit-slide slide-3">
-              <figcaption class="orbit-caption">
-                <h1>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</h1>
-              </figcaption>
+            <li class="orbit-slide">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+                <figcaption class="orbit-caption">
+                  <h1>Get Rewarded with Fast Points</h1>
+                  <p>With Fast Points, you immediately receive rewards at checkout!</p>
+                  <a href="#" class="button">Learn More</a>
+                </figcaption>
+              </figure>
             </li>
+
             <nav class="orbit-bullets">
               <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
               <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
@@ -123,6 +137,9 @@
             <img src="./img/fasttrac-fb-promo.jpg" alt="">
           </div>
           <div class="fad-promo-banner">
+            <img src="./img/fasttrac-fb-promo-2.jpg" alt="">
+          </div>
+          <div class="fad-promo-banner-big">
             <img src="./img/fasttrac-fb-promo-2.jpg" alt="">
           </div>
         </div>

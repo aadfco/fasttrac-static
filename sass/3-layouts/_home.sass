@@ -1,83 +1,96 @@
 /* Image Slider */
 .fullscreen-image-slider
-  .orbit-image
-    width: 100%
-    height: 65vh
 
-    @include breakpoint(small only)
-      height: 45vh
+.orbit-figure
 
+
+.orbit-image
+  width: 100%
 
 .orbit-container
-  height: 100%
 
 .orbit-slide
-  height: 90vh
+
+  @include breakpoint(small)
+    @include breakpoint(landscape)
+      max-height: 75vh
+
+  @include breakpoint(large)
+    max-height: 85vh
+  // background-size: cover
+  // background-repeat: no-repeat
+  // background-position: center
 
 .orbit-caption
     bottom: 50%
     transform: translateY(50%)
     background: none
     text-align: left
-    padding-left: 60px
+    padding-left: 1rem
     color: $white
-    text-shadow: 2px 3px 7px $black
+    text-shadow: 2px 3px 5px $black
+    width: 95%
+
+    h1
+      font-size: rem-calc(18)
 
     p
-      font-size: rem-calc(18)
-      text-shadow: 2px 3px 5px $black
+      font-size: 1rem
 
-      @include breakpoint(medium down)
-        font-size: 1rem
-
-    @include breakpoint(small)
-      padding-left: 1rem
-
-      .button
-        font-size: 0.8rem
-
-      h1
-        font-size: 0.9rem
+    .button
+      font-size: 0.8rem
 
     @include breakpoint(medium)
-      padding-left: 3.75rem
+      padding-left: 3rem
 
       h1
         font-size: 2rem
+
+      p
+        font-size: rem-calc(18)
 
       .button
         font-size: 1rem
 
 
     @include breakpoint(large)
-      padding-left: 5rem
-
-.slide-1, .slide-2, .slide-3
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
-
-.slide-1
-  background-image: url('../img/slides/fastpoints-card-mockup.jpg')
-
-.slide-2
-  background-image: url('../img/slides/slide-2@1200px.jpg')
-
-.slide-3
-  background-image: url('../img/slides/slide-3@1200px.jpg')
+      width: 60%
+      padding-left: 7rem
 
 
 .orbit-previous, .orbit-next
   top: 50%
   background-color: rgba($black, 0.5)
+  display: none
+  height: 75px
+  width: 75px
+  border-radius: 50%
 
-  @include breakpoint(medium down)
-    display: none
+  .nav
+    margin-top: -3px
+
+  @include breakpoint(large)
+    display: block
+
+
+.orbit-previous
+  left: 10px
+
+  .nav
+    margin-right: 6px
+
+.orbit-next
+  right: 10px
+
+  .nav
+    margin-left: 6px
+
 
 .orbit-bullets
   position: absolute
   left: 50%
-  bottom: rem-calc(10)
+  margin-bottom: 0
+  bottom: rem-calc(5)
 
   button
     width: 0.7rem
@@ -117,6 +130,7 @@
 
     @include breakpoint(medium)
       padding: 0 5%
+
 
 .earn-steps
   margin-top: 60px
@@ -222,6 +236,7 @@
       font-weight: 800
       color: $red
       font-size: 0.8rem
+      text-transform: capitalize
 
       @include breakpoint(375px)
         @include breakpoint(landscape)
@@ -247,12 +262,12 @@
 
 .btn-row
   .button
-    margin: 30px 10px
-    padding: 1rem 5rem
+    margin: 30px 3px
+    padding: 1rem 2rem
 
-    @include breakpoint(small only)
-      margin: 30px 3px
-      padding: 1rem 2.5rem
+    @include breakpoint(medium)
+      margin: 30px 10px
+      padding: 1rem 5
 
 
 /* Food and Drinks */
@@ -266,28 +281,26 @@
     color: $white
 
   h2
-    text-align: justify
+    text-align: center
     font-size: rem-calc(22)
 
     @include breakpoint(medium)
-      text-align: center
       font-size: rem-calc(28)
+
+  p
+    text-align: justify
+    font-size: rem-calc(20)
+    padding: 0
+
+    @include breakpoint(medium)
+      padding: 0 5%
 
 .promo-banner-row
   padding-top: rem-calc(30)
   padding-bottom: rem-calc(30)
 
-.fad-promo-banner-left, .fad-promo-banner-right
-  background-size: cover
-  background-repeat: no-repeat
-  width: 50%
-  height: 320px
-
-.fad-promo-banner-left
-  background-image: url("../img/fasttrac-fb-promo.jpg")
-
-.fad-promo-banner-right
-  background-image: url("../img/fasttrac-fb-promo.jpg")
+.fad-promo-banner
+  border: 2px solid $black
 
 /* Store Locator */
 .store-locator-home
@@ -384,19 +397,18 @@
   z-index: 10000
   right: 0
   top: auto
-  bottom: 70px
+  bottom: 0
   transform: none
   width: 100%
-  border: 2px solid $dark-gray
+  border: 2px solid $black
+  box-shadow: $global-big-box-shadow
   border-radius: $global-radius
-  box-shadow: $global-box-shadow
   visibility: hidden
   opacity: 0
-  transition: opacity 200ms 2s, visibility 200ms ease-in-out 1s
+  transition: opacity 200ms 0.5s, visibility 200ms ease-in 0.5s
 
   @include breakpoint(medium)
     width: 475px
-    right: 0
 
   .close-button
     top: 0

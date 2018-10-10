@@ -72,7 +72,10 @@ footer
 .fad-promo-banner
   @include xy-cell(12, true, 0)
   @include breakpoint(medium)
-    @include xy-cell(6, true, 0)
+    @include xy-cell(auto, true, 0)
+
+.fad-promo-banner-big
+  @include xy-cell(12, true, 0)
 
 .store-locator-form
   @include xy-cell(12)
@@ -164,6 +167,7 @@ h1, h2, h3, h4, h5, h6
 
 /* Text Effects and Box Shadows */
 $global-box-shadow: 0 1px 5px rgba(0,0,0,0.3)
+$global-big-box-shadow: rgba(0,0,0,0.498) 0px 0px 30px 0px
 $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
 
 .standard-shadow
@@ -347,7 +351,7 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
     @include breakpoint(medium)
       column-count: 1
       column-gap: 0
-      
+
     li
       text-transform: capitalize
       @include breakpoint(medium)

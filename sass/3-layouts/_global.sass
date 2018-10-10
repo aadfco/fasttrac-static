@@ -279,6 +279,20 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
       transform: translate(0px, 3px)
       border-bottom: 1px solid darken($white, 15%)
 
+.btn-row
+  .button
+    margin: 30px 3px
+    padding: 1rem 2rem
+    width: 100%
+
+    @include breakpoint(landscape)
+      width: auto
+
+    @include breakpoint(medium)
+      margin: 30px 10px
+      padding: 1rem 5rem
+      width: auto
+
 /* Color Gradients */
 $minimalred-top-gradient: linear-gradient(to top, #f00000, #dc281e)
 $youtube-top-gradient: linear-gradient(to top, #e52d27, #b31217)

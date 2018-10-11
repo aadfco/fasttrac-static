@@ -225,23 +225,17 @@ ul.secondary-mobile-menu
 
 
 .fp-login
-  margin-left: 0
-  @include breakpoint(medium down)
-    display: none
+  display: none
+  @include breakpoint(large)
+    display: block
 
 .fp-logo
   text-align: center
 
   img
-    width: 70%
+    max-height: 35px
     display: block
     margin: 0 auto
-
-    @include breakpoint(large)
-      width: 60%
-
-    @include breakpoint(xxlarge)
-      width: 70%
 
 .fp-login-link
   font-size: rem-calc(10)

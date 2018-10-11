@@ -18,6 +18,9 @@ footer
 .container
   @include xy-grid-container
 
+.fluid-container
+  @extend .grid-container, .fluid
+
 .site-wrapper
   position: relative
   min-height: 100vh
@@ -40,25 +43,23 @@ footer
   @include xy-cell(6)
 
 .logo
-  @include xy-cell(6)
-  @include breakpoint(medium)
-    @include xy-cell(50%)
+  @include xy-cell(6, true, 0)
   @include breakpoint(large)
-    @include xy-cell(20%)
+    @include xy-cell(15%, true, 0)
 
 .mobile-menu
   @include xy-cell(6)
 
 .primary-menu
-  @include xy-cell(auto)
+  @include xy-cell(auto, true, 0)
 
   .menu
     @include flex-align(right)
 
 .fp-login
-  @include xy-cell(15%)
+  @include xy-cell(12%, true, 0)
   @include breakpoint(xlarge)
-    @include xy-cell(12%)
+    @include xy-cell(9%, true, 0)
 
 .section-content
   @include xy-cell(12)
@@ -290,7 +291,7 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
 
     @include breakpoint(medium)
       margin: 30px 10px
-      padding: 1rem 5rem
+      padding: 1rem 3rem
       width: auto
 
 /* Color Gradients */

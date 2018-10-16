@@ -61,7 +61,8 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Oswald:400,700');
+// https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900
 
 // 1. Global
 // ---------
@@ -87,8 +88,8 @@ $yellow: #ffc425;
 $green: #c3d83d;
 $blue: #4f9adc;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $medium-black;
+$body-font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -118,7 +119,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -136,8 +137,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: 900;
+$header-font-family: 'Oswald', Helvetica, Roboto, Arial, sans-serif; ;
+$header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
@@ -173,7 +174,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: $red;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;

@@ -1,0 +1,148 @@
+.wpsl-search-bar
+  background-color: lighten($black, 10%)
+  box-shadow: $global-box-shadow
+  padding: 1rem 0
+
+  label
+    color: $white
+    text-transform: capitalize
+    font-weight: 700
+    font-size: 1rem
+
+
+.wpsl-search-btn
+  margin-top: 1rem
+  width: 100%
+
+  @include breakpoint(large)
+    margin-top: 0
+
+
+.wpsl-no-results-msg
+  font-size: rem-calc(22)
+  font-weight: 700
+  color: $medium-black
+
+.wpsl-stores
+
+  span
+    display: block
+
+  ul
+    list-style: none
+    margin-left: 0
+
+    li
+      padding: 1rem rem-calc(10)
+      border-bottom: 1px solid $light-gray
+
+      a
+        font-weight: 700
+
+      .wpsl-store-location
+        p
+          strong
+            a
+              font-size: rem-calc(20)
+
+              &:after
+                content: "\f138"
+                font-family: "Font Awesome 5 Free"
+                margin-left: rem-calc(5)
+
+          a.wpsl-store-details
+            font-size: inherit
+
+            &:after
+              content: none
+
+
+
+.wpsl-info-window
+  span
+    display: block
+
+  a
+    font-weight: 700
+
+
+.wpsl-info-actions
+  padding-top: rem-calc(5)
+
+  a
+    font-weight: 700
+
+  a.wpsl-zoom-here
+    padding-left: rem-calc(10)
+
+
+/*******************************************
+ ******** Locations Single Page ************
+ *******************************************
+ */
+.store-details-section
+  position: relative
+
+.store-info-wrap
+  position: relative
+  background-color: lighten($black, 10%)
+  min-height: rem-calc(225)
+
+  @include breakpoint(medium)
+    min-height: rem-calc(280)
+
+  @include breakpoint(large)
+    min-height: rem-calc(225)
+
+
+
+
+.store-map-wrap
+  height: rem-calc(200)
+  width: 100%
+
+.ft-store-image
+  box-shadow: $global-big-box-shadow
+  position: absolute
+  top: 17%
+  left: 5%
+  z-index: 10
+
+  @include breakpoint(medium)
+    top: 25%
+
+
+.ft-store-image-wrap
+  width: 100px
+  height: 100px
+
+  @include breakpoint(medium)
+    width: 150px
+    height: 150px
+
+  @include breakpoint(large)
+    width: 200px
+    height: 200px
+
+.ft-store-details
+  text-align: right
+  position: absolute
+  width: 50%
+  right: 5%
+  top: 10%
+  color: $white
+
+  @include breakpoint(medium)
+    top: 10%
+
+  @include breakpoint(large)
+    top: 15%
+    width: 60%
+
+.get-directions-link
+  font-weight: 700
+
+  &:before
+    content: "\f5a0"
+    font-family: "Font Awesome 5 Free"
+    padding-right: rem-calc(10)

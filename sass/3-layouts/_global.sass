@@ -21,6 +21,9 @@ footer
 .fluid-container
   @extend .grid-container, .fluid
 
+.full-container
+  @extend .grid-container, .full
+
 .site-wrapper
   position: relative
   min-height: 100vh
@@ -149,6 +152,32 @@ footer
 
 .image-nav-block
   @extend .cell
+
+.wpsl-input
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(3)
+
+.wpsl-select-menu
+  @include xy-cell(6)
+  @include breakpoint(large)
+    @include xy-cell(2)
+
+.wpsl-search-btn-wrap
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(3)
+
+.wpsl-result-list
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(3)
+
+.wpsl-gmap-wrap
+  @include xy-cell(12)
+  @include breakpoint(large)
+    @include xy-cell(9)
+
 
 /* Animations */
 .animation-delay-500ms

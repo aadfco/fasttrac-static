@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<div class="page-hero single">
+<div class="page-hero single-bg">
   <div class="page-hero-content centered">
     <h1 class="standard-shadow">News Post Title</h1>
     <div class="hero-post-info">

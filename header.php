@@ -20,7 +20,7 @@
   <body>
     <header class="navigation">
       <div class="top-nav">
-        <div class="fluid-container">
+        <div class="full-container">
           <div class="inner-row">
             <div class="top-social">
               <ul class="menu">
@@ -44,7 +44,7 @@
 
       <!-- Begin Main Nav -->
       <div class="main-nav">
-        <div class="fluid-container">
+        <div class="full-container">
           <div class="inner-row align-justify align-middle">
             <div class="logo animated fadeInLeftBig">
               <a href="/fasttrac-static"><img src="img/fasttrac-logo-2.svg" alt="Fast Trac Convenience Store" align="left"></a>

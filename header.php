@@ -46,12 +46,13 @@
       <div class="main-nav">
         <div class="full-container">
           <div class="inner-row align-justify align-middle">
-            <div class="logo animated fadeInLeftBig">
+
+            <div class="logo animated">
               <a href="/fasttrac-static"><img src="img/fasttrac-logo-2.svg" alt="Fast Trac Convenience Store" align="left"></a>
             </div>
 
             <nav class="mobile-menu hide-for-large" role="navigation">
-              <div class="mobile-btn-wrap">
+              <div class="mobile-btn-wrap animated">
                 <button class="hamburger hamburger--elastic" type="button" data-toggle="mobile-menu-overlay">
                   <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -75,7 +76,7 @@
             </nav>
 
             <!-- Begin Desktop Navigation Menus -->
-            <nav class="primary-menu animated fadeInRightBig">
+            <nav class="primary-menu animated">
               <ul class="menu">
                 <li><a href="./fastpoints.php">fast points</a></li>
                 <li><a href="./foodanddrinks.php">food &amp; drinks</a></li>
@@ -83,7 +84,7 @@
               </ul>
             </nav>
 
-            <div class="fp-login animated fadeInRightBig">
+            <div class="fp-login animated">
               <div class="fp-logo">
                 <a href="#">
                   <img src="img/fastpoints-logo.svg" alt="Fast Trac Fast Points Login | Sign up">

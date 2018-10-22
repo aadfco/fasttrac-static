@@ -95,6 +95,9 @@
   border-left: 1px solid $light-gray
   order: 3
 
+.mobile-btn-wrap
+  animation-name: fadeInRightBig
+
 .mobile-menu-overlay
   z-index: 2000
   position: fixed
@@ -183,6 +186,7 @@ ul.secondary-mobile-menu
 
 .primary-menu
   order: 2
+  animation-name: fadeInRightBig
   ul.menu
     border-right: 1px solid $medium-gray
     padding: rem-calc(10) 0
@@ -205,9 +209,12 @@ ul.secondary-mobile-menu
 .logo
   width: 130px
   order: 2
+  animation-name: fadeInDownBig
+  
   @include breakpoint(large)
     order: 1
-
+    animation-name: fadeInLeftBig
+    padding-left: 1rem
 
   img
     max-height: 70px
@@ -221,12 +228,14 @@ ul.secondary-mobile-menu
   border-right: 1px solid $light-gray
   order: 1
   padding: 6px 0
+  animation-name: fadeInLeftBig
 
   @include breakpoint(medium)
     width: 115px
 
   @include breakpoint(large)
     order: 3
+    animation-name: fadeInRightBig
 
 
 .fp-logo

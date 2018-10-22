@@ -1,4 +1,6 @@
-/******** Globals *******/
+/*******************************************
+ ******** Globals *************************
+ ******************************************/
 body
   position: relative
   height: 100%
@@ -14,7 +16,9 @@ footer
   // bottom: 0
 
 
-/* Semantics for Containers, Grids, and Cells*/
+/*******************************************************************
+ ******** Semantics for Containers, Grids, and Cells ***************
+ *******************************************************************/
 .container
   @include xy-grid-container
 
@@ -42,27 +46,11 @@ footer
   @include xy-grid
   display: inline-flex
 
-.top-social, .secondary-menu
-  @include xy-cell(6)
-
-.logo
-  @include xy-cell(6, true, 0)
-  @include breakpoint(large)
-    @include xy-cell(15%, true, 0)
-
-.mobile-menu
-  @include xy-cell(6)
-
 .primary-menu
   @include xy-cell(auto, true, 0)
 
   .menu
     @include flex-align(right)
-
-.fp-login
-  @include xy-cell(12%, true, 0)
-  @include breakpoint(xlarge)
-    @include xy-cell(9%, true, 0)
 
 .section-content
   @include xy-cell(12)
@@ -131,6 +119,10 @@ footer
   @include breakpoint(large)
     @include xy-grid-layout(4, '.post-gallery-img-thumb')
 
+.post-navigation
+  @include xy-cell(auto)
+
+
 .contact-info
   @include xy-cell(6)
   @include breakpoint(large)
@@ -179,7 +171,9 @@ footer
     @include xy-cell(9)
 
 
-/* Animations */
+/*******************************************
+ ******** Animations ***********************
+ *******************************************/
 .animation-delay-500ms
   animation-delay: 500ms !important
 
@@ -189,12 +183,25 @@ footer
 .transition-duration-300ms
   transition-duration: 300ms !important
 
-/* Typography - Font Weights: Open Sans 400, 700, 800 */
+
+/*******************************************
+ ******** Typography ***********************
+ *******************************************/
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   letter-spacing: 1px
 
-/* Text Effects and Box Shadows */
+.heading-underlined
+  padding-bottom: rem-calc(5)
+  border-bottom: 1px solid $light-gray
+
+  @include breakpoint(medium)
+    display: inline-block
+
+
+/*******************************************
+ ******** Text Effects and Box Shadows *****
+ *******************************************/
 $global-box-shadow: 0 1px 5px rgba(0,0,0,0.3)
 $global-big-box-shadow: rgba(0,0,0,0.498) 0px 0px 30px 0px
 $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
@@ -234,7 +241,10 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
   -10px 10px 0px darken($red, 15%),
   -15px 15px 0px darken($red, 25%)
 
-/* Button */
+
+/*******************************************
+ ******** Buttons **************************
+ *******************************************/
 .button
   font-size: 1rem
   text-transform: uppercase
@@ -322,7 +332,10 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
       padding: 1rem 3rem
       width: auto
 
-/* Color Gradients */
+
+/*******************************************
+ ******** Color Gradients ******************
+ *******************************************/
 $minimalred-top-gradient: linear-gradient(to top, #f00000, #dc281e)
 $youtube-top-gradient: linear-gradient(to top, #e52d27, #b31217)
 $youtube-right-gradient: linear-gradient(to right, #e52d27, #b31217)
@@ -333,9 +346,11 @@ $fasttrac-gradient: linear-gradient(180deg, rgb(227, 27, 35), rgb(255, 196, 37))
 $black-overlay-gradient: linear-gradient(rgba($black, 0.2), rgba($black, 0.2))
 $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
-/* Headers and Heroes */
+
+/*******************************************
+ ******** Headers and Heros ****************
+ *******************************************/
 .page-hero
-  background: $black-overlay-gradient, url('../img/checkout.jpg')
   background-position: center center
   background-repeat: no-repeat
   background-size: cover
@@ -378,9 +393,11 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
 .centered
   text-align: center
-  padding: 0
+  padding: 0 1rem
 
-/* Stacks */
+/*******************************************
+ ******** Stacks ***************************
+ *******************************************/
 .stack-content
   padding-left: rem-calc(30)
   padding-right: rem-calc(30)
@@ -411,7 +428,9 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
     min-height: 450px
 
 
-/* Page and Post Content */
+/*******************************************
+ ******** Page and Post Content ************
+ *******************************************/
 .section-title
   text-align: center
   padding-top: rem-calc(60)
@@ -429,13 +448,26 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 .widget-title
   font-size: rem-calc(18)
 
+.entry-content-padded
+  padding: rem-calc(60) 0
 
-/* Tabs */
+.post-navigation
+  text-align: center
+  padding-bottom: rem-calc(30)
+
+.pagination
+  font-weight: 700
+
+/*******************************************
+ ******** Tabs *****************************
+ *******************************************/
 .filter-tabs
   padding: rem-calc(60) 0
 
 
-/* Image Nav Blocks */
+/*******************************************
+ ******** Image Nav Blocks *****************
+ *******************************************/
 .image-nav-block
   margin: rem-calc(5) 0
   padding: 0 0.5rem
@@ -486,3 +518,45 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
   a
     color: inherit
+
+
+/*******************************************
+ ******** Accessibility ********************
+ *******************************************/
+.screen-reader-text
+	border: 0
+	clip: rect(1px, 1px, 1px, 1px)
+	clip-path: inset(50%)
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute !important
+	width: 1px
+	word-wrap: normal !important /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+
+.screen-reader-text:focus
+	background-color: #f1f1f1
+	border-radius: 3px
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6)
+	clip: auto !important
+	clip-path: none
+	color: $red
+	display: block
+	font-size: 14px
+	font-size: 0.875rem
+	font-weight: bold
+	height: auto
+	left: 5px
+	line-height: normal
+	padding: 15px 23px 14px
+	text-decoration: none
+	top: 5px
+	width: auto
+	z-index: 100000
+	/* Above WP toolbar. */
+
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus
+	outline: 0

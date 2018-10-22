@@ -21,7 +21,7 @@
     <header class="navigation">
       <div class="top-nav">
         <div class="full-container">
-          <div class="inner-row">
+          <div class="inner-row align-justify">
             <div class="top-social">
               <ul class="menu">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -83,7 +83,7 @@
               </ul>
             </nav>
 
-            <div class="fp-login animated fadeInRightBig slow">
+            <div class="fp-login animated fadeInRightBig">
               <div class="fp-logo">
                 <a href="#">
                   <img src="img/fastpoints-logo.svg" alt="Fast Trac Fast Points Login | Sign up">

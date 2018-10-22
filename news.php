@@ -18,7 +18,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -39,7 +39,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -60,7 +60,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -81,7 +81,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -102,7 +102,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">
@@ -123,7 +123,7 @@
           <i class="fas fa-folder-open"></i>
           <span>community</span>
         </div>
-        <header>
+        <header class="entry-header">
           <h1>News Post Title</h1>
         </header>
         <div class="post-date">

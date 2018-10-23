@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <div class="how-to-earn">
+  <section class="how-to-earn">
     <div class="container">
       <div class="inner-row">
         <div class="section-title">
@@ -59,7 +59,49 @@
       </div>
       </div>
     </div>
-  </div> <!-- end how-to-earn -->
+  </section> <!-- end how-to-earn -->
+
+  <section class="in-store-fast-points">
+    <div class="container">
+      <div class="inner-row">
+        <div class="section-title">
+          <h1 class="superhero">Fast Points Clubs</h1>
+        </div>
+      </div>
+      <div class="fpc-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Clubs</th>
+              <th>Rewards</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Breakfast Sandwich & Burrito Club</td>
+              <td>Buy 6 Get 1 Free</td>
+            </tr>
+            <tr>
+              <td>Roller Grill Club</td>
+              <td>Buy 6 Get 1 Free</td>
+            </tr>
+            <tr>
+              <td>Coffee Club</td>
+              <td>Buy 6 Get 1 Free</td>
+            </tr>
+            <tr>
+              <td>Fountain Club</td>
+              <td>Buy 6 Get 1 Free</td>
+            </tr>
+            <tr>
+              <td>Lunch Sandwich Club</td>
+              <td>Buy 6 Get 1 Free</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
   <div class="rewards-faq">
     <div class="container">
@@ -121,7 +163,6 @@
               </div>
             </li>
 
-
           </ul>
         </div>
       </div>
@@ -129,12 +170,12 @@
     </div>
   </div><!-- end rewards-faq -->
 
-  <div class="join-fastpoints-hero">
+  <section class="join-fastpoints-hero">
     <div class="join-fastpoints-hero-content">
       <h1 class="standard-shadow">Join Fast Points!</h1>
       <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
       <a href="#" class="button">Join Now!</a>
     </div>
-  </div>
+  </section>
 
 <?php include('footer.php'); ?>

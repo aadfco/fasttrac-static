@@ -330,6 +330,11 @@
 
   input[type="submit"]
     @extend .button
+    width: 100%
+    margin-top: 1rem
+
+    @include breakpoint(medium)
+      width: 50%
 
 
 /* Careers */
@@ -350,9 +355,7 @@
       padding-bottom: rem-calc(30)
       padding-right: 0
       font-size: rem-calc(20)
-
-      @include breakpoint(medium)
-        padding-right: 50%
+      text-align: justify
 
 .careers-home
   .button
@@ -362,11 +365,10 @@
       display: inline-block
 
 
-
 .employee-cutout
   position: absolute
   bottom: 0
-  right: 0
+  right: 1rem
   display: none
 
   @include breakpoint(medium)
@@ -374,7 +376,7 @@
 
   img
     display: block
-    max-width: 185px
+    max-width: 150px
     margin: 0 auto
 
 

@@ -184,7 +184,7 @@
             </div>
           </div>
           <div class="inner-row">
-            <div class="section-content small-order-2 medium-order-1 wow animated slideInLeft animation-delay-300ms">
+            <div class="careers-content small-order-2 medium-order-1 wow animated slideInLeft animation-delay-300ms">
               <p>Many of our long-term, seasoned employees began their careers right here. From your first day, you’ll discover why so many have chosen to build their career at Fast Trac.</p>
               <a href="./careers.php" class="button">browse careers</a>
             </div>

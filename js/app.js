@@ -1,4 +1,6 @@
-$(document).foundation().ready( function(){
+( function($) {
+  jQuery(document).foundation()
+
   $('.hamburger').click(function(){
 		$(this).toggleClass('is-active');
 	});
@@ -54,7 +56,6 @@ $(document).foundation().ready( function(){
       }
     });
 
-
   //Hide Drinks on page load
   $(".drinks").hide();
 
@@ -109,4 +110,4 @@ $(document).foundation().ready( function(){
     }
   }
 
-}); //end document.ready
+})(jQuery); //end document.ready

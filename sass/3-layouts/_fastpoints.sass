@@ -1,6 +1,13 @@
+/*******************************************
+ ******** Hero ****************************
+ *******************************************/
 .fastpoints
   background-image: $black-overlay-gradient, url('../img/happygirl.jpg')
 
+
+/*******************************************
+ ******** How To Earn **********************
+ *******************************************/
 .how-to-earn
   background: $fasttrac-gradient
   padding-bottom: 60px
@@ -48,8 +55,92 @@
       @include breakpoint(medium)
         text-align: justify
 
+/*******************************************
+ ******** Fast Points Club *****************
+ *******************************************/
 .in-store-fast-points
-  background-image: $youtube-top-gradient
+  background: $youtube-top-gradient
+
+.fpc-cards-wrapper
+  padding-top: rem-calc(60)
+
+  .cell
+    margin-bottom: 2rem
+
+    @include breakpoint(large)
+      margin-bottom: 0
+
+.fpc-card
+  text-align: center
+  box-shadow: $global-big-box-shadow
+  color: $white
+  height: 100%
+  background: $medium-black
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+  &:hover
+    transform: scale(1.1)
+
+  .card-title
+    background: darken($success-color, 10%)
+    padding: 1rem
+
+  .card-content
+    background: $medium-black
+    padding: 1rem 1rem 0
+    text-align: left
+    text-transform: capitalize
+    font-weight: 700
+
+  .card-section
+    background: $success-color
+    color: $white
+
+
+.banner-wrapper
+  margin-top: 3rem
+
+.section-banner
+  width: 100%
+  border-top: 1px solid #982426
+  border-bottom: 1px solid #982426
+  color: $white
+  align-items: center
+  justify-content: space-between
+
+.dark-overlay
+  background: rgba($black, 0.1)
+
+.darker-overlay
+  background: rgba($black, 0.2)
+
+
+.banner-img-wrapper
+  width: 100%
+
+  @include breakpoint(large)
+    width: 30%
+
+  img
+    height: 200px
+    display: block
+    margin: 0 auto
+
+    @include breakpoint(medium)
+      height: 250px
+
+    @include breakpoint(large)
+      height: 100%
+
+
+.banner-content
+  width: 100%
+  padding: 1rem
+  font-weight: 700
+
+  @include breakpoint(large)
+    width: 50%
+    padding: 2rem 3rem
 
 .fpc-table-wrapper
   padding: rem-calc(60 0)
@@ -73,7 +164,9 @@
         background-color: transparent
         border-bottom: 1px solid rgba(255,255,255,0.1)
 
-
+/*******************************************
+ ******** FAQ ******************************
+ *******************************************/
 .rewards-faq
   background: #485563
   background: linear-gradient(to left, #29323c, #485563)
@@ -115,6 +208,10 @@
     @include breakpoint(large)
       padding: 1rem 1.2rem
 
+
+/*******************************************
+ ******** Join Hero ************************
+ *******************************************/
 .join-fastpoints-hero
   background-position: center center
   background-repeat: no-repeat

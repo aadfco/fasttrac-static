@@ -16,92 +16,167 @@
       </div>
 
       <div class="card-wrapper">
-        <div class="grid-x grid-padding-x small-up-1 medium-up-3">
-        <div class="cell">
-          <div class="card">
-            <div class="card-icon-circle">
-              <div class="card-icon">
-                <i class="fas fa-star"></i>
+        <div class="grid-x grid-padding-x small-up-1 large-up-3">
+          <div class="cell">
+            <div class="card">
+              <div class="card-icon-circle">
+                <div class="card-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="card-section">
+                <h4>Earn Points</h4>
+                <p>Simply make a qualifying purchase at Fast Trac and immediately receive discounts at checkout.</p>
               </div>
             </div>
-            <div class="card-section">
-              <h4>Earn Points</h4>
-              <p>Simply make a qualifying purchase at Fast Trac and immediately receive discounts at checkout.</p>
+          </div>
+          <div class="cell">
+            <div class="card">
+              <div class="card-icon-circle">
+                <div class="card-icon">
+                  <i class="fas fa-flag-checkered"></i>
+                </div>
+              </div>
+              <div class="card-section">
+                <h4>Redeem for Rewards</h4>
+                <p>After you've made so many purchases, you can use your accumulated points to redeem for store rewards.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card">
+              <div class="card-icon-circle">
+                <div class="card-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="card-section">
+                <h4>Receive Member Benefits</h4>
+                <p>As a Fast Points member, you'll receive exclusive discounts on items purchased at our stores.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="cell">
-          <div class="card">
-            <div class="card-icon-circle">
-              <div class="card-icon">
-                <i class="fas fa-flag-checkered"></i>
-              </div>
-            </div>
-            <div class="card-section">
-              <h4>Redeem for Rewards</h4>
-              <p>After you've made so many purchases, you can use your accumulated points to redeem for store rewards.</p>
-            </div>
-          </div>
-        </div>
-        <div class="cell">
-          <div class="card">
-            <div class="card-icon-circle">
-              <div class="card-icon">
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-            <div class="card-section">
-              <h4>Receive Member Benefits</h4>
-              <p>As a Fast Points member, you'll receive exclusive discounts on items purchased at our stores.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </section> <!-- end how-to-earn -->
 
   <section class="in-store-fast-points">
     <div class="container">
+
       <div class="inner-row">
         <div class="section-title">
           <h1 class="superhero">Fast Points Clubs</h1>
         </div>
       </div>
-      <div class="fpc-table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Clubs</th>
-              <th>Rewards</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Breakfast Sandwich & Burrito Club</td>
-              <td>Buy 6 Get 1 Free</td>
-            </tr>
-            <tr>
-              <td>Roller Grill Club</td>
-              <td>Buy 6 Get 1 Free</td>
-            </tr>
-            <tr>
-              <td>Coffee Club</td>
-              <td>Buy 6 Get 1 Free</td>
-            </tr>
-            <tr>
-              <td>Fountain Club</td>
-              <td>Buy 6 Get 1 Free</td>
-            </tr>
-            <tr>
-              <td>Lunch Sandwich Club</td>
-              <td>Buy 6 Get 1 Free</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="fpc-cards-wrapper">
+        <div class="grid-x grid-padding-x small-up-1 large-up-3">
+
+          <div class="cell">
+            <div class="card fpc-card">
+              <div class="card-image">
+                <img src="./img/fuel-icon-red-wide.svg" alt="">
+              </div>
+              <div class="card-title">
+                <h4>Auto 2¢ Fuel Rollback</h4>
+                <h6>(Purchase two select in-store items)</h6>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>20oz Mountain Dew’s</li>
+                  <li>McCafe’s</li>
+                  <li>Regular size Twix bars</li>
+                  <li>Regular size Butterfingers</li>
+                  <li>Regular size Hershey chocolate bar & Hershey almond bar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cell">
+            <div class="card fpc-card">
+              <div class="card-image">
+                <img src="./img/fuel-icon-yellow-wide.svg" alt="">
+              </div>
+              <div class="card-title">
+                <h4>Auto 3¢ Fuel Rollback</h4>
+                <h6>(Purchase two select in-store items)</h6>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>All Muscle Milk varieties</li>
+                  <li>Full Throttle & NOS</li>
+                  <li>Core Waters (all sizes)</li>
+                  <li>Snicker King sizes</li>
+                  <li>Sour Patch Peg Bags</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cell">
+            <div class="card fpc-card">
+              <div class="card-image">
+                <img src="./img/store-icon-wide.svg" alt="">
+              </div>
+              <div class="card-title">
+                <h4>In-Store Clubs</h4>
+                <h6>(Buy 6 get 1 Free)</h6>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>Breakfast Sandwich & Burrito Club</li>
+                  <li>Roller Grill Club</li>
+                  <li>Coffee Club</li>
+                  <li>Fountain Club</li>
+                  <li>Sandwich Club</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- end container -->
+
+  <div class="banner-wrapper">
+    <div class="section-banner inner-row dark-overlay">
+      <div class="banner-img-wrapper small-order-1">
+        <img src="./img/card-swipe-icon.svg" alt="">
+      </div>
+      <div class="banner-content small-order-2">
+        <h2 class="standard-shadow">Instant Swipe Rewards</h2>
+        <p>For every . . .</p>
+        <ul>
+          <li>First swipe (Registration) get 5¢ off your next fuel purchase up to 20 gallons</li>
+          <li>Third swipe receive an extra “20 Fast Points” which is equivalent to $1</li>
+          <li>Seventh swipe receive a free “16 oz Nestle Pure Life Water”</li>
+          <li>Every Eleventh swipe earn double the “Fast Points”</li>
+          <li>Birthday Trigger, receive a free coffee mug on us</li>
+        </ul>
       </div>
     </div>
-  </section>
+
+    <div class="section-banner inner-row darker-overlay">
+      <div class="banner-content small-order-2 large-order-1">
+        <h2 class="standard-shadow">Fuel rollback program</h2>
+        <p>Receive 5 points towards every gallon purchased</p>
+        <ul>
+          <li>3¢ = A total of 675 points</li>
+          <li>10¢ = A total of points 2250</li>
+          <li>25¢ = A total of 5625 points</li>
+        </ul>
+        <p>*Redemption is only valid for one rollback transaction up to 20 gallons. Diesel fuel is excluded.</p>
+      </div>
+      <div class="banner-img-wrapper small-order-1 large-order-2">
+        <img src="./img/fuel-pump-icon.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  </section><!-- end in-store-fast-points -->
 
   <div class="rewards-faq">
     <div class="container">

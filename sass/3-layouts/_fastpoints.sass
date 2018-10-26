@@ -78,19 +78,27 @@
   background: $medium-black
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
 
-  &:hover
-    transform: scale(1.1)
-
   .card-title
     background: darken($success-color, 10%)
     padding: 1rem
 
   .card-content
     background: $medium-black
-    padding: 1rem 1rem 0
     text-align: left
     text-transform: capitalize
     font-weight: 700
+
+    ul
+      list-style: none
+      margin-left: 0
+
+      li
+        padding: rem-calc(14 24)
+        border-bottom: 1px solid darken($medium-black, 5%)
+
+        &:last-child
+          border-bottom: none
+
 
   .card-section
     background: $success-color
@@ -141,6 +149,10 @@
   @include breakpoint(large)
     width: 50%
     padding: 2rem 3rem
+
+  ul
+    li
+      margin-bottom: 1rem  
 
 .fpc-table-wrapper
   padding: rem-calc(60 0)

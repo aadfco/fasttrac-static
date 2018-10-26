@@ -96,7 +96,12 @@
         <span class="counter-icon">
           <i class="fas fa-award"></i>
         </span>
-        <span class="counter-number" data-count="25">
+        <?php
+        $startYear = new DateTime('2005-01-01');
+        $currentYear = new DateTime();
+        $diff= date_diff($currentYear, $startYear);
+        ?>
+        <span class="counter-number" data-count="<?php echo $diff->y; ?>">
           0
         </span>
         <span class="counter-text">
@@ -108,4 +113,5 @@
   </div>
 
 </div>
+
 <?php include('footer.php'); ?>

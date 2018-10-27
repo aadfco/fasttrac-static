@@ -61,7 +61,7 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i|Oswald:400,700');
 // https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900
 
 // 1. Global
@@ -94,7 +94,7 @@ $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-$global-weight-normal: normal;
+$global-weight-normal: 500;
 $global-weight-bold: bold;
 $global-radius: 5px;
 $global-circle-radius: 50%;

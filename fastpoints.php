@@ -160,6 +160,9 @@
     </div>
 
     <div class="section-banner inner-row darker-overlay">
+      <div class="banner-img-wrapper small-order-1 large-order-2">
+        <img src="./img/fuel-pump-icon.svg" alt="">
+      </div>
       <div class="banner-content small-order-2 large-order-1">
         <h2 class="standard-shadow">Fuel rollback program</h2>
         <p>Receive 5 points towards every gallon purchased</p>
@@ -168,10 +171,7 @@
           <li>10¢ = A total of points 2250</li>
           <li>25¢ = A total of 5625 points</li>
         </ul>
-        <p>*Redemption is only valid for one rollback transaction up to 20 gallons. Diesel fuel is excluded.</p>
-      </div>
-      <div class="banner-img-wrapper small-order-1 large-order-2">
-        <img src="./img/fuel-pump-icon.svg" alt="">
+        <p class="conditional-rules">*Redemption is only valid for one rollback transaction up to 20 gallons. Diesel fuel is excluded.</p>
       </div>
     </div>
   </div>

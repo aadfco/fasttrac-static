@@ -398,6 +398,31 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
   text-align: center
   padding: 0 1rem
 
+.page-not-found
+  position: absolute
+  left: 0
+  right: 0
+  top: 10%
+
+  @include breakpoint(small)
+    @include breakpoint(landscape)
+      top: 8%
+
+  @include breakpoint(medium)
+    top: 12%
+
+  @include breakpoint(large)
+    top: 16%
+
+  h1
+    font-size: rem-calc(60)
+    
+    @include breakpoint(medium)
+      font-size: rem-calc(80)
+
+  a
+    font-weight: 500
+
 /*******************************************
  ******** Stacks ***************************
  *******************************************/
@@ -461,11 +486,109 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 .pagination
   font-weight: 700
 
+
+.gallery
+	margin-bottom: 1.5em
+
+
+.gallery-item
+  display: inline-block
+  text-align: center
+  vertical-align: top
+  width: 100%
+  margin-bottom: 2rem
+
+
+.gallery-columns-2 .gallery-item
+	max-width: 50%
+
+
+.gallery-columns-3 .gallery-item
+	max-width: 33.33%
+
+
+.gallery-columns-4 .gallery-item
+	max-width: 25%
+
+
+.gallery-columns-5 .gallery-item
+	max-width: 20%
+
+
+.gallery-columns-6 .gallery-item
+	max-width: 16.66%
+
+
+.gallery-columns-7 .gallery-item
+	max-width: 14.28%
+
+
+.gallery-columns-8 .gallery-item
+	max-width: 12.5%
+
+
+.gallery-columns-9 .gallery-item
+	max-width: 11.11%
+
+
+.gallery-caption
+	display: block
+
+
 /*******************************************
  ******** Tabs *****************************
  *******************************************/
 .filter-tabs
   padding: rem-calc(60) 0
+
+.tabs-container
+  width: 100%
+
+.tabs
+  border: none
+  border-bottom: 1px solid $light-gray
+  text-align: center
+
+.tabs-content
+  border: none
+
+  p
+    padding-top: 30px
+
+.tabs-title
+  a
+    font-size: rem-calc(11)
+    font-weight: 700
+    text-transform: uppercase
+    padding: 1.25rem 0.8rem
+
+    @include breakpoint(321px)
+      font-size: rem-calc(13)
+
+    @include breakpoint(small)
+      @include breakpoint(landscape)
+        font-size: 1rem
+
+    @include breakpoint(medium)
+      font-size: 1rem
+      padding: 1.25rem 1.5rem
+
+    &:hover
+      color: $red
+
+  &:hover
+    border-bottom: 1px solid $red
+
+.tabs-title.is-active
+  border-bottom: 1px solid $red
+
+.tab-thumbnail
+  height: 340px
+  display: block
+  margin: 0 auto
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
 
 
 /*******************************************
@@ -485,7 +608,7 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
   overflow: hidden
 
   img
-    transition: transform .2s
+    transition: transform ease-in-out .25s
     max-width: 100%
 
   &::after

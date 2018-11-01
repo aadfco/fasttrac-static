@@ -15,30 +15,6 @@
   	})
 	wow.init();
 
-  // Fast Points Reminder Popup
-    var fpr = $('.fast-points-reminder');
-    var fprShow = "fpr-show";
-
-    function fpRemind() {
-      fpr.addClass(fprShow);
-    }
-
-    var homeCheck = $(".store-locator-home").length;
-
-    if (homeCheck) {
-      function fprScroll() {
-        var slHome = $('.store-locator-home');
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var slTop = $(slHome).offset().top;
-        var slBottom = slTop + $(slHome).height();
-
-        if ((slBottom <= docViewBottom) && (slTop >= docViewTop)) {
-          fpRemind();
-        }
-      }
-    document.addEventListener('scroll',fprScroll);
-    }
 
 
   // Enable sticky tab nav on Food and Drinks Page
@@ -77,7 +53,7 @@
 
 // Animated Number Counter
   var a = 0;
-  var countItems = document.querySelectorAll('.counter-items-container');
+  var countItems = document.querySelector('.counter-items-container');
 
   if (countItems) {
     function counterAnimate() {

@@ -88,13 +88,17 @@
 .store-info-wrap
   position: relative
   background-color: lighten($black, 10%)
-  min-height: rem-calc(225)
+  min-height: rem-calc(280)
+
+  @include breakpoint(small)
+    @include breakpoint(landscape)
+      min-height: rem-calc(200)
 
   @include breakpoint(medium)
-    min-height: rem-calc(280)
+    min-height: rem-calc(295)
 
   @include breakpoint(large)
-    min-height: rem-calc(225)
+    min-height: rem-calc(280)
 
 .store-map-wrap
   height: rem-calc(200)
@@ -109,6 +113,9 @@
 
   @include breakpoint(medium)
     top: 25%
+
+  @include breakpoint(large)
+    top: 15%
 
 .ft-store-image-wrap
   width: 100px

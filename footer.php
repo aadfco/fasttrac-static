@@ -61,9 +61,11 @@
 
 
 <script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script src="js/what-input.min.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/functions.js"></script>
 </body>
 </html>

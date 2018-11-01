@@ -195,8 +195,21 @@
         </div>
       </section>
 
+      <div class="c-notify-wrapper" data-closeable>
+        <div class="c-notify-banner">
+          <div class="inner-row align-justify align-middle">
+            <div class="cell small-12 medium-10">
+              <p>This website uses cookies to ensure you get the best experience on our website. <a href="https://aadf.co/fasttrac-wp/legal-disclosure">Learn More</a></p>
+            </div>
+            <!-- <div class="cell auto"> -->
+              <button class="button yellow-btn" onclick="cNotifyDismiss()" aria-label="Dismiss Cookie Notice" type="button" data-close>Got it!</button>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
       <div class="fast-points-reminder" data-closable>
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <button class="close-button" onclick="fprDismiss()" aria-label="Dismiss Fast Points Reminder" type="button" data-close>
           <span aria-hidden="true">&times;</span>
         </button>
         <div class="inner-row reminder-window align-middle">

@@ -1,4 +1,6 @@
-/* Image Slider */
+/*******************************************
+ ******** Image Slider *** *****************
+ *******************************************/
 .fullscreen-image-slider
 
 .orbit-figure
@@ -8,6 +10,7 @@
   width: 100%
 
 .orbit-container
+  height: 100%
 
 .orbit-slide
 
@@ -17,9 +20,6 @@
 
   @include breakpoint(large)
     max-height: 85vh
-  // background-size: cover
-  // background-repeat: no-repeat
-  // background-position: center
 
 .orbit-caption
     bottom: 50%
@@ -100,7 +100,9 @@
     left: 45%
 
 
-/* Fast Points Rewards */
+/*******************************************
+ ******** Fast Points Rewards ***************
+ *******************************************/
 .fast-points-home
   background-color: $red
   background-image: url("../img/arches.png")
@@ -261,7 +263,9 @@
       text-align: center
 
 
-/* Food and Drinks */
+/*******************************************
+ ******** Food and Drinks ******************
+ *******************************************/
 .fad-home
   background-color: $medium-black
   background-image: url("../img/zig-zag.png")
@@ -293,7 +297,10 @@
 .fad-promo-banner
   border: 2px solid $black
 
-/* Store Locator */
+
+/*******************************************
+ ******** Store Locator *****************
+ *******************************************/
 .store-locator-home
   background-image: url("../img/fasttrac-nighttime.jpg")
   background-repeat: no-repeat
@@ -337,7 +344,9 @@
       width: 50%
 
 
-/* Careers */
+/*******************************************
+ ******** Careers **************************
+ *******************************************/
 .careers-home
   position: relative
   padding-bottom: rem-calc(60)
@@ -380,7 +389,9 @@
     margin: 0 auto
 
 
-/* Fast Points Popup */
+/*******************************************
+ ******** Fast Points Reminder *************
+ *******************************************/
 .fast-points-reminder
   height: 250px
   background-image: url('../img/fasttrac-nighttime.jpg')
@@ -390,15 +401,13 @@
   z-index: 10000
   right: 0
   top: auto
-  bottom: 0
-  transform: none
+  bottom: 5px
   width: 100%
   border: 2px solid $black
   box-shadow: $global-big-box-shadow
   border-radius: $global-radius
-  visibility: hidden
-  opacity: 0
-  transition: opacity 200ms 0.5s, visibility 200ms ease-in 0.5s
+  transform: translateX(150%)
+  transition: all 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28)
 
   @include breakpoint(medium)
     width: 475px
@@ -407,8 +416,7 @@
     top: 0
 
 .fpr-show
-  visibility: visible
-  opacity: 1
+  transform: translateX(0)
 
 .reminder-window
   text-align: left
@@ -426,9 +434,42 @@
 
   p
     font-size: rem-calc(18)
+    line-height: 1.5
 
   .button
     display: block
 
 .reminder-message
   padding-top: rem-calc(30)
+
+
+/*******************************************
+ ******** Cookie Notice  *******************
+ *******************************************/
+.c-notify-wrapper
+  z-index: 9998
+  position: relative
+
+.c-notify-banner
+  background: $medium-black
+  color: $white
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  padding: 1.5rem 1.5rem 0.5rem
+  transform: translateY(0)
+  transition: all 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28)
+
+  p
+    font-weight: 700
+
+  button
+    width: 100%
+
+    @include breakpoint(medium)
+      width: auto
+
+.cnb-hide
+  display: none

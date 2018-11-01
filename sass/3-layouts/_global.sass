@@ -416,7 +416,7 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
   h1
     font-size: rem-calc(60)
-    
+
     @include breakpoint(medium)
       font-size: rem-calc(80)
 
@@ -459,6 +459,13 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 /*******************************************
  ******** Page and Post Content ************
  *******************************************/
+.border-top
+  border-top: 1px solid $light-gray
+
+.border-top-bottom
+  border-top: 1px solid $light-gray
+  border-bottom: 1px solid $light-gray
+
 .section-title
   text-align: center
   padding-top: rem-calc(60)
@@ -485,6 +492,9 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
 .pagination
   font-weight: 700
+
+.attachment-details
+  list-style: none
 
 
 .gallery
@@ -534,6 +544,12 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 .gallery-caption
 	display: block
 
+/*******************************************
+ ******** Simple Job Post  *****************
+ *******************************************/
+.sjb-page button
+  text-transform: capitalize
+
 
 /*******************************************
  ******** Tabs *****************************
@@ -560,7 +576,7 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
     font-size: rem-calc(11)
     font-weight: 700
     text-transform: uppercase
-    padding: 1.25rem 0.8rem
+    padding: 1.25rem 0.6rem
 
     @include breakpoint(321px)
       font-size: rem-calc(13)

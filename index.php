@@ -208,7 +208,7 @@
         </div>
       </div>
 
-      <div class="fast-points-reminder" data-closable>
+      <div class="fast-points-reminder" id="fast-points-reminder" data-closable>
         <button class="close-button" onclick="fprDismiss()" aria-label="Dismiss Fast Points Reminder" type="button" data-close>
           <span aria-hidden="true">&times;</span>
         </button>

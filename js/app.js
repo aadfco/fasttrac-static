@@ -15,8 +15,6 @@
   	})
 	wow.init();
 
-
-
   // Enable sticky tab nav on Food and Drinks Page
     var tabnav = $('.tab-nav-group');
     var tabnavScroll = "tab-nav-scroll";

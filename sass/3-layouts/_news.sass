@@ -6,6 +6,7 @@
 
 .news-card
   position: relative
+  margin-bottom: 4rem
 
   a
     h1, p
@@ -60,78 +61,3 @@
 
   .post-button
     margin: 0 auto
-
-
-.news-card-2
-  position: relative
-  transition: all .3s ease-out
-
-  &:hover
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.2)
-    transform: translateY(-1px)
-
-  a
-    h1, p
-      color: $black
-
-  @include card-container
-  h1
-    font-size: rem-calc(24)
-
-  header
-    @include card-divider
-    padding: 1rem 1rem 0 1rem
-
-  .post-date
-    color: $dark-gray
-    padding: 0.5rem 1rem 0 1rem
-
-    span
-      font-weight: 700
-      margin-left: 5px
-
-  .post-excerpt
-    @include card-section
-
-  .post-category
-    background-color: $black
-    color: $white
-    padding: 0.125rem 1rem
-
-    a
-      color: inherit
-
-    .fas
-      font-size: rem-calc(14)
-
-    span
-      margin-left: 5px
-      text-transform: capitalize
-      font-size: rem-calc(14)
-
-
-  .post-category-2
-    background-color: $black
-    color: $white
-    padding: 0.125rem 1rem
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-
-    a
-      color: inherit
-
-      &:hover
-        color: $red
-
-    .fas
-      font-size: rem-calc(14)
-
-    span
-      margin-left: 5px
-      text-transform: capitalize
-      font-size: rem-calc(14)
-
-.news-card, .news-card-2
-  margin-bottom: 4rem

@@ -1,52 +1,78 @@
-( function($) {
-  jQuery(document).foundation()
+// No conflict var calls
+var ftCookie = Cookies.noConflict();
+var jQn = jQuery.noConflict();
 
-  $('.hamburger').click(function(){
-		$(this).toggleClass('is-active');
-	});
+// Initialize Foundation
+jQn(document).foundation();
 
-  // Wow Animation Settings and Initialization
-	wow = new WOW({
-		boxClass:						'wow',
-		anmiateClass:				'animated',
-		offset:							0,
-		mobile:							true,
-		live:								true
-  	})
-	wow.init();
+// Enable cookie when Got It button is clicked on cookie banner
+function cNotifyDismiss() {
+  ftCookie.set('eucBanner', 'true', {expires: 365, path: '/'});
+}
 
-  // Enable sticky tab nav on Food and Drinks Page
-    var tabnav = $('.tab-nav-group');
-    var tabnavScroll = "tab-nav-scroll";
+// Cookie Banner Fetch Call
+var cnbFetch = ftCookie.get('eucBanner');
 
-    $(window).scroll( function() {
-      var pagehero = $(".page-hero").height();
+// Hide Cookied elements if cookies exists.
+var cnwElement = document.querySelector(".c-notify-wrapper");
 
-      if( $(this).scrollTop() > pagehero ) {
-        tabnav.addClass(tabnavScroll);
-      }
-      else {
-        tabnav.removeClass(tabnavScroll);
-      }
-    });
+function cnbHide(){
+  cnwElement.parentNode.removeChild(cnwElement);
+}
 
-  //Hide Drinks on page load
-  $(".drinks").hide();
+if(cnbFetch){
+  cnbHide();
+}
 
+// Iniitialize Hamburger Menu
+jQn('.hamburger').click(function(){
+	jQn(this).toggleClass('is-active');
+});
 
-  // shows and hides filtered items
-  $(".filter-simple-button").click(function() {
-    var value = $(this).attr('data-filter');
-      $(".stacked-wrapper").not('.'+value).hide();
-      $('.stacked-wrapper').filter('.'+value).show();
-  });
+// Wow Animation Settings and Initialization
+wow = new WOW({
+	boxClass:						'wow',
+	anmiateClass:				'animated',
+	offset:							0,
+	mobile:							true,
+	live:								true
+	})
+wow.init();
 
 
-  // changes active class on filter buttons
-  $('.filter-simple-button').click(function () {
-    $(this).siblings().removeClass('is-active');
-    $(this).addClass('is-active');
-  });
+
+// Enable sticky tab nav on Food and Drinks Page
+var tabnav = jQn('.tab-nav-group');
+var tabnavScroll = "tab-nav-scroll";
+
+jQn(window).scroll( function() {
+  var pagehero = jQn(".page-hero").height();
+
+  if( jQn(this).scrollTop() > pagehero ) {
+    tabnav.addClass(tabnavScroll);
+  }
+  else {
+    tabnav.removeClass(tabnavScroll);
+  }
+});
+
+
+// Food and Drinks Page: Hide Drinks on page load
+jQn(".drinks").hide();
+
+// Shows and hides filtered items
+jQn(".filter-simple-button").click(function() {
+  var value = jQn(this).attr('data-filter');
+    jQn(".stacked-wrapper").not('.'+value).hide();
+    jQn('.stacked-wrapper').filter('.'+value).show();
+});
+
+
+// Changes active class on filter buttons
+jQn('.filter-simple-button').click(function () {
+  jQn(this).siblings().removeClass('is-active');
+  jQn(this).addClass('is-active');
+});
 
 
 // Animated Number Counter
@@ -55,10 +81,10 @@
 
   if (countItems) {
     function counterAnimate() {
-      $('.counter-number').each(function() {
-        var $this = $(this),
+      jQn('.counter-number').each(function() {
+        var $this = jQn(this),
           countTo = $this.attr('data-count');
-        $({
+        jQn({
           countNum: $this.text()
         }).animate({
             countNum: countTo
@@ -79,5 +105,3 @@
     }
     document.addEventListener('scroll', counterAnimate);
   }
-
-})(jQuery); //end document.ready

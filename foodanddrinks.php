@@ -8,14 +8,14 @@
   </div> -->
 </div>
 
-<section class="filter-simple">
+<section class="filter-simple border-bottom">
   <div class="tab-nav-group">
     <button class="tab-btn filter-simple-button is-active" data-filter="food">food</button>
     <button class="tab-btn filter-simple-button" data-filter="drinks">drinks</button>
   </div>
 
   <div class="stacked-wrapper inner-row food animated fadeIn" data-equalizer>
-    <div class="stack-media large-order-2 breakfast-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
+    <div class="stack-media large-order-2" style="background-image: url('./img/breakfast-sandwich.jpg');" role="img" aria-label="Breakfast Image" data-equalizer-watch>
       <!-- <img src="img/breakfast.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-1" data-equalizer-watch>
@@ -30,7 +30,7 @@
       </ul>
     </div>
 
-    <div class="stack-media large-order-3 lunch-img" role="img" aria-label="Breakfast Image" data-equalizer-watch>
+    <div class="stack-media large-order-3" style="background-image: url('./img/hotdog.jpg');" role="img" aria-label="Breakfast Image" data-equalizer-watch>
       <!-- <img src="img/breakfast.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="stacked-wrapper inner-row drinks animated fadeIn" data-equalizer>
-    <div class="stack-media large-order-2 soda-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
+    <div class="stack-media large-order-2" style="background-image: url('./img/soda.jpg');" role="img" aria-label="Coffee Image" data-equalizer-watch>
       <!-- <img src="img/coffee.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-1" data-equalizer-watch>
@@ -73,7 +73,7 @@
       </ul>
     </div>
 
-    <div class="stack-media large-order-3 coffee-img" role="img" aria-label="Coffee Image" data-equalizer-watch>
+    <div class="stack-media large-order-3" style=" background-image: url('./img/coffee.jpg');" role="img" aria-label="Coffee Image" data-equalizer-watch>
       <!-- <img src="img/coffee.jpg" alt=""> -->
     </div>
     <div class="stack-content container large-order-4" data-equalizer-watch>
@@ -86,6 +86,73 @@
         <li>Cappuccino</li>
       </ul>
     </div>
+  </div>
+
+</section>
+
+<section class="fad-deals">
+
+  <header class="section-title">
+    <h1>Our Current Deals</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="inner-row grid-margin-x small-up-1 large-up-3">
+
+      <div class="fad-deal-card">
+
+        <div class="card-image">
+          <img src="https://unsplash.it/550/300/" alt="">
+        </div>
+
+        <header class="entry-header">
+          <h3>Buy 1 Get One for $1</h3>
+        </header>
+
+        <div class="card-section">
+          <p class="fad-deal-description">This is the current promotion for this deal.</p>
+          <p class="fad-deal-disclaimer">Offer valid 7/2-12/30/18 at participating McDonald’s. McD App download and registration required. Mobile Order & Pay at participating McDonald's. ©2018 McDonald's</p>
+        </div>
+
+      </div>
+
+      <div class="fad-deal-card">
+
+        <div class="card-image">
+          <img src="https://unsplash.it/550/300/" alt="">
+        </div>
+
+        <header class="entry-header">
+          <h3>Buy 1 Get One for $1</h3>
+        </header>
+
+        <div class="card-section">
+          <p class="fad-deal-description">This is the current promotion for this deal.</p>
+          <p class="fad-deal-disclaimer">Offer valid 7/2-12/30/18 at participating McDonald’s. McD App download and registration required. Mobile Order & Pay at participating McDonald's. ©2018 McDonald's</p>
+        </div>
+
+      </div>
+
+      <div class="fad-deal-card">
+
+        <div class="card-image">
+          <img src="https://unsplash.it/550/300/" alt="">
+        </div>
+
+        <header class="entry-header">
+          <h3>Buy 1 Get One for $1</h3>
+        </header>
+
+        <div class="card-section">
+          <p class="fad-deal-description">This is the current promotion for this deal.</p>
+          <p class="fad-deal-disclaimer">Offer valid 7/2-12/30/18 at participating McDonald’s. McD App download and registration required. Mobile Order & Pay at participating McDonald's. ©2018 McDonald's</p>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
 </section>

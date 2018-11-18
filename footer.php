@@ -1,3 +1,16 @@
+  <div class="c-notify-wrapper" data-closeable>
+    <div class="c-notify-banner">
+      <div class="inner-row align-justify align-middle">
+        <div class="cell small-12 medium-10">
+          <p>This website uses cookies to ensure you get the best experience on our website. <a href="https://aadf.co/fasttrac-wp/legal-disclosure">Learn More</a></p>
+        </div>
+        <!-- <div class="cell auto"> -->
+          <button class="button yellow-btn" onclick="cNotifyDismiss()" aria-label="Dismiss Cookie Notice" type="button" data-close>Got it!</button>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="main-footer">
       <div class="container">
@@ -66,6 +79,6 @@
 <script src="js/foundation.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
-<script src="js/functions.js"></script>
+<script src="js/homescripts.js"></script>
 </body>
 </html>

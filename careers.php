@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<div class="page-hero careers">
+<div class="page-hero careers" style="background-image: url('./img/gas-employee-1@1000px.jpg');">
   <div class="page-hero-content centered">
     <h1 class="standard-shadow">Careers</h1>
     <p class="subheader">Join the Fast Trac Team!</p>

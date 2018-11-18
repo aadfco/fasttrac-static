@@ -34,7 +34,7 @@
 
 <section class="stacks">
   <div class="stacked-wrapper inner-row" data-equalizer>
-    <div class="stack-media large-order-2 success-img wow animated fadeIn" role="img" aria-label="Success Image" data-equalizer-watch>
+    <div class="stack-media large-order-2 wow animated fadeIn" role="img" aria-label="Success Image" data-equalizer-watch style="background-image: url('./img/fasttrac-day@1000px.jpg');">
       <!-- <img src="img/fasttrac-day@1000px.jpg" alt=""> -->
     </div>
     <div class="stack-content sc-bc container large-order-1 wow animated fadeIn" data-equalizer-watch>
@@ -42,7 +42,7 @@
       <p>Vivamus sit amet maximus leo, vel tincidunt diam. Morbi in arcu diam. Maecenas mollis tellus vitae lacus laoreet, et tincidunt dui venenatis. Duis ex augue, malesuada congue erat vitae, aliquam varius dui. Ut lacinia luctus eros. Pellentesque blandit eros dapibus feugiat accumsan. Curabitur vel hendrerit ante. Praesent at finibus tortor, quis blandit lorem. Sed tincidunt, eros vel dignissim hendrerit, leo neque gravida metus, ac posuere metus arcu a erat. Duis id ante eros. Suspendisse vitae lobortis ante. Aliquam maximus enim orci, a ullamcorper quam sodales non. Donec commodo pretium nisl at finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies sodales diam, ac sollicitudin nulla ultrices vitae.</p>
     </div>
 
-    <div class="stack-media large-order-3 choose-img wow animated fadeIn" role="img" aria-label="Why Choose Us" data-equalizer-watch>
+    <div class="stack-media large-order-3 wow animated fadeIn" role="img" aria-label="Why Choose Us" data-equalizer-watch style="background-image: url('./img/happypeople.jpg');">
       <!-- <img src="img/happypeople.jpg" alt=""> -->
     </div>
     <div class="stack-content sc-bc container large-order-4 wow animated fadeIn" data-equalizer-watch>

@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-  <div class="page-hero fastpoints">
+  <div class="page-hero" style="background-image: url('./img/happygirl.jpg');">
     <div class="page-hero-content centered">
       <h1 class="standard-shadow">Fast Points Rewards</h1>
       <p class="subheader">Get Rewarded Instantly!</p>

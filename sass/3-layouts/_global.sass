@@ -9,13 +9,6 @@ body
   @include breakpoint(large)
     padding-top: 106px
 
-footer
-  // position: absolute
-  // width: 100%
-  // left: 0
-  // bottom: 0
-
-
 /*******************************************************************
  ******** Semantics for Containers, Grids, and Cells ***************
  *******************************************************************/
@@ -172,7 +165,6 @@ footer
   @include breakpoint(large)
     @include xy-cell(9)
 
-
 /*******************************************
  ******** Animations ***********************
  *******************************************/
@@ -184,7 +176,6 @@ footer
 
 .transition-duration-300ms
   transition-duration: 300ms !important
-
 
 /*******************************************
  ******** Typography ***********************
@@ -199,7 +190,6 @@ h1, h2, h3, h4, h5, h6
 
   @include breakpoint(medium)
     display: inline-block
-
 
 /*******************************************
  ******** Text Effects and Box Shadows *****
@@ -334,7 +324,10 @@ $global-text-shadow: 1px 3px 5px rgba(0,0,0,0.6)
       padding: 1rem 3rem
       width: auto
 
-
+.wpforms-form input[type=submit], 
+.wpforms-form button[type=submit],
+.wpforms-page-button
+  @extend .button
 /*******************************************
  ******** Color Gradients ******************
  *******************************************/
@@ -454,7 +447,6 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
   @include breakpoint(medium)
     min-height: 450px
 
-
 /*******************************************
  ******** Page and Post Content ************
  *******************************************/
@@ -498,10 +490,8 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 .attachment-details
   list-style: none
 
-
 .gallery
 	margin-bottom: 1.5em
-
 
 .gallery-item
   display: inline-block
@@ -510,38 +500,29 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
   width: 100%
   margin-bottom: 2rem
 
-
 .gallery-columns-2 .gallery-item
 	max-width: 50%
-
 
 .gallery-columns-3 .gallery-item
 	max-width: 33.33%
 
-
 .gallery-columns-4 .gallery-item
 	max-width: 25%
-
 
 .gallery-columns-5 .gallery-item
 	max-width: 20%
 
-
 .gallery-columns-6 .gallery-item
 	max-width: 16.66%
-
 
 .gallery-columns-7 .gallery-item
 	max-width: 14.28%
 
-
 .gallery-columns-8 .gallery-item
 	max-width: 12.5%
 
-
 .gallery-columns-9 .gallery-item
 	max-width: 11.11%
-
 
 .gallery-caption
 	display: block
@@ -551,7 +532,6 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
  *******************************************/
 .sjb-page button
   text-transform: capitalize
-
 
 /*******************************************
  ******** Tabs *****************************
@@ -699,7 +679,6 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 	width: auto
 	z-index: 100000
 	/* Above WP toolbar. */
-
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus

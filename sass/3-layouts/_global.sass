@@ -104,8 +104,6 @@ body
 
 .post-content
   @include xy-cell(12)
-  @include breakpoint(large)
-    @include xy-cell(8)
 
 .post-gallery
   @include xy-grid()
@@ -532,6 +530,22 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
  *******************************************/
 .sjb-page button
   text-transform: capitalize
+
+/*******************************************
+ ******** Download Manager  *****************
+ *******************************************/
+.w3eden 
+    a
+        color: $red
+        
+        &:hover
+            color: lighten($red,14%)
+
+.w3eden .list-group .badge, .w3eden .badge
+    background: $red
+
+.w3eden .list-group .badge
+    border-radius: $global-radius    
 
 /*******************************************
  ******** Tabs *****************************

@@ -19,21 +19,25 @@
   padding: 60px 0
 
 .tag-cloud
+    list-style-type: none
 
-  a
-    border: 1px solid $light-gray
-    border-radius: $global-radius
-    padding: 2px 5px
-    margin: 0px 5px 10px 0px
-    display: inline-block
-    color: $black
-    font-weight: 700
-    font-size: rem-calc(12)
-    text-transform: uppercase
+    li
+        border: 1px solid $light-gray
+        border-radius: $global-radius
+        padding: 2px 5px
+        margin: 0px 5px 10px 0px
+        display: inline-block
+        color: $black
+        font-weight: 700
+        font-size: rem-calc(12)
+        text-transform: uppercase
 
-    &:hover
-      background-color: $red
-      color: $white
+        &:hover
+            background-color: $red
+            color: $white
+
+        a
+            color: inherit    
 
 .share-post
   text-align: center

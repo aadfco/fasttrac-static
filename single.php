@@ -128,18 +128,18 @@
 
           </div><!-- end post-gallery -->
 
-          <div class="widget-container">
+          <!-- <div class="widget-container"> -->
             <hr>
             <h2 class="widget-title">Tags</h2>
-            <div class="tag-cloud">
-              <a href="#">community</a>
-              <a href="#">local</a>
-              <a href="#">news</a>
-              <a href="#">ohio</a>
-              <a href="#">outreach</a>
-            </div>
+            <ul class="tag-cloud">
+                <li><a href="#">community</a></li>
+                <li><a href="#">local</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">ohio</a></li>
+                <li><a href="#">outreach</a></li>
+            </ul>
             <hr>
-          </div> <!-- end widget-container -->
+          <!-- </div> end widget-container -->
 
           <div class="widget-container">
             <div class="share-post">

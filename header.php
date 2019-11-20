@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="apple-itunes-app" content="app-id=1446338754"> Uncomment to enable iOS Smart App Banner-->
     <title>Fast Trac Convenience Store | Gas Station Convenience Store Serving Ohio</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">

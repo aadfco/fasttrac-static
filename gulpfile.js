@@ -33,8 +33,9 @@ gulp.task('default', ['sass'], function() {
 
   browserSync.init({
     notify: false,
-    proxy: 'localhost:8888/fasttrac-static',
-    port: 8080
+	host: 'fasttrac-static.test',
+    proxy: 'http:///fasttrac-static.test',
+	open: 'external'
   });
 
   //gulp.watch(['scss/**/*.scss'], ['sass']);

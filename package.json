@@ -14,7 +14,7 @@
     "email": "foundation@zurb.com"
   },
   "dependencies": {
-    "animate.css": "^3.7.0",
+    "animate.css": "^3.7.2",
     "browser-sync": "^2.24.7",
     "foundation-sites": "~6.4.0",
     "hamburgers": "^0.9.3",

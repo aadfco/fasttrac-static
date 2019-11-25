@@ -1,64 +1,90 @@
 /*******************************************
- ******** Image Slider *** *****************
+ ******** Hero Blocks *******************
  *******************************************/
-.orbit-image
-  width: 100%
+.promo-block-container
+  height: inherit
+  
+  @include breakpoint(medium)
+    height: 470px
+
+.block-promo
+  background-color: yellow
+  height: 235px
+  text-align: center
+  width: 50%
+
+  @include breakpoint(medium)
+    width: 100%
+
+  h3
+    margin: auto
+
+.block-promo--2
+  background-color: green 
+	 
+	
+/*******************************************
+ ******** Image Slider *******************
+ *******************************************/	
+.orbit
+  height: 100%
 
 .orbit-container
   height: 100% !important
 
+.orbit-figure
+  height: 100%
+
 .orbit-slide
+  height: 100% 
 
-  @include breakpoint(small)
-    @include breakpoint(landscape)
-      max-height: 75vh
-
-  @include breakpoint(large)
-    max-height: 85vh
+.orbit-image
+  width: 100%
+  height: 100%
 
 .orbit-caption
-    bottom: 50%
-    transform: translateY(50%)
-    background: none
-    text-align: left
-    padding-left: 1rem
-    color: $white
-    text-shadow: 2px 3px 5px $black
-    width: 95%
+  bottom: 50%
+  transform: translateY(50%)
+  background: none
+  text-align: left
+  padding-left: 1rem
+  color: $white
+  text-shadow: 2px 3px 5px $black
+  width: 95%
+
+  h1
+    font-size: rem-calc(18)
+
+  p
+    font-size: 1rem
+
+  .button
+    font-size: 0.8rem
+
+  @include breakpoint(medium)
+    padding-left: 3rem
 
     h1
-      font-size: rem-calc(18)
+      font-size: 2rem
 
     p
-      font-size: 1rem
+      font-size: rem-calc(18)
 
     .button
-      font-size: 0.8rem
-
-    @include breakpoint(medium)
-      padding-left: 3rem
-
-      h1
-        font-size: 2rem
-
-      p
-        font-size: rem-calc(18)
-
-      .button
-        font-size: 1rem
+      font-size: 1rem
 
 
-    @include breakpoint(large)
-      width: 60%
-      padding-left: 7rem
+  @include breakpoint(large)
+    width: 60%
+    padding-left: 7rem
 
 
 .orbit-previous, .orbit-next
   top: 50%
   background-color: rgba($black, 0.5)
   display: none
-  height: 75px
-  width: 75px
+  height: 50px
+  width: 50px
   border-radius: 50%
 
   .nav
@@ -72,13 +98,19 @@
   left: 10px
 
   .nav
-    margin-right: 6px
+    margin-right: 4px
+
+  .fa-chevron-left
+    font-size: 1.5rem  
 
 .orbit-next
   right: 10px
 
   .nav
-    margin-left: 6px
+    margin-left: 4px
+
+  .fa-chevron-right
+    font-size: 1.5rem  
 
 
 .orbit-bullets

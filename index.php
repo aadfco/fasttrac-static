@@ -1,56 +1,70 @@
 <?php include('header.php'); ?>
 
 <!-- Begin Image Slider -->
-      <div class="fullscreen-image-slider animated fadeIn">
-        <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
-          <ul class="orbit-container orbit-wrapper">
-            <button class="orbit-previous">
-              <span class="show-for-sr">Previous Slide</span>
-              <span class="nav fa fa-chevron-left fa-3x"></span>
-            </button>
-            <button class="orbit-next">
-              <span class="show-for-sr">Next Slide</span>
-              <span class="nav fa fa-chevron-right fa-3x"></span>
-            </button>
-            <li class="is-active orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
-                <figcaption class="orbit-caption">
-                  <h1>Get Rewarded with Fast Points</h1>
-                  <p>Duis sit amet sapien eleifend, pulvinar odio a, hendrerit diam. Curabitur ac pharetra nulla. Donec justo augue, ornare eget molestie a, rutrum sit amet lectus.</p>
-                  <a href="#" class="button">Learn More</a>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
-                <figcaption class="orbit-caption">
-                  <h1>Get Rewarded with Fast Points</h1>
-                  <p>With Fast Points, you immediately receive rewards at checkout!</p>
-                  <a href="#" class="button">Learn More</a>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="orbit-slide">
-              <figure class="orbit-figure">
-                <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
-                <figcaption class="orbit-caption">
-                  <h1>Get Rewarded with Fast Points</h1>
-                  <p>With Fast Points, you immediately receive rewards at checkout!</p>
-                  <a href="#" class="button">Learn More</a>
-                </figcaption>
-              </figure>
-            </li>
+	<div class="inner-row promo-block-container">
+    <div class="inner-row block-stack-container small-order-2 medium-order-2">
+	  	<div class="block-promo">
+        <h3>Promo Block 1</h3>
+      </div>	
+      <div class="block-promo block-promo--2">
+        <h3>Promo Block 2</h3>
+      </div>	
+	  </div>
+    
+    <div class="block-slider small-order-1 medium-order-2 animated fadeIn">
+      <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit data-auto-play="false">
+        <ul class="orbit-container orbit-wrapper">
+          <button class="orbit-previous">
+            <span class="show-for-sr">Previous Slide</span>
+            <span class="nav fa fa-chevron-left fa-3x"></span>
+          </button>
+          <button class="orbit-next">
+            <span class="show-for-sr">Next Slide</span>
+            <span class="nav fa fa-chevron-right fa-3x"></span>
+          </button>
+          <li class="is-active orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+              <figcaption class="orbit-caption">
+                <h1>Get Rewarded with Fast Points</h1>
+                <p>Duis sit amet sapien eleifend, pulvinar odio a, hendrerit diam.</p>
+                <a href="#" class="button">Learn More</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+              <figcaption class="orbit-caption">
+                <h1>Get Rewarded with Fast Points</h1>
+                <p>With Fast Points, you immediately receive rewards at checkout!</p>
+                <a href="#" class="button">Learn More</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="./img/slides/fastpoints-card-mockup.jpg" alt="">
+              <figcaption class="orbit-caption">
+                <h1>Get Rewarded with Fast Points</h1>
+                <p>With Fast Points, you immediately receive rewards at checkout!</p>
+                <a href="#" class="button">Learn More</a>
+              </figcaption>
+            </figure>
+          </li>
 
-            <nav class="orbit-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-            </nav>
-          </ul>
-        </div>
-      </div> <!-- end FullScreen Image Slider -->
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          </nav>
+        </ul>
+      </div>
+    </div> <!-- end Block Slider -->
+
+	  
+
+	</div> <!-- end inner-row promo-block-container -->
 
 <!-- Fast Points -->
       <section class="fast-points-home">

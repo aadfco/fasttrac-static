@@ -48,6 +48,16 @@ body
 .section-content
   @include xy-cell(12)
 
+.block-stack-container
+  @include xy-cell(12, true, 0)
+  @include breakpoint(medium)
+    @include xy-cell(5, true, 0)  
+
+.block-slider
+  @include xy-cell(12, true, 0)
+  @include breakpoint(medium)
+    @include xy-cell(7, true, 0)
+
 .two-col-section-content
   @include xy-cell(6)
 
@@ -358,12 +368,16 @@ $sunrise-bottom-gradient: linear-gradient(to bottom, #ff512f, #f09819)
 
   h1
     color: $white
+    font-size: 6rem
 
   p.subheader
+    display: inline-block
+    position: relative
+    padding: rem-calc(10 50)
     color: $white
     font-size: 1rem
-    text-shadow: $global-text-shadow
     font-weight: 700
+    background-color: rgba(black, 0.7)
 
     @include breakpoint(small)
       @include breakpoint(landscape)

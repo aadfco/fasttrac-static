@@ -49,7 +49,7 @@
           <div class="inner-row align-justify align-middle">
 
             <div class="logo animated">
-              <a href="/fasttrac-static"><img src="img/fasttrac-logo-2.svg" alt="Fast Trac Convenience Store" align="left"></a>
+              <a href="/"><img src="img/fasttrac-logo-2.svg" alt="Fast Trac Convenience Store" align="left"></a>
             </div>
 
             <nav class="mobile-menu hide-for-large" role="navigation">

@@ -1,8 +1,8 @@
 <?php include('header.php'); ?>
 
-  <div class="page-hero" style="background-image: url('./img/happygirl.jpg');">
+  <div class="page-hero" style="background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)),url('./img/happygirl.jpg');">
     <div class="page-hero-content centered">
-      <h1 class="standard-shadow">Fast Points Rewards</h1>
+      <h1 class="superhero">Fast Points Rewards</h1>
       <p class="subheader">Get Rewarded Instantly!</p>
     </div>
   </div>
